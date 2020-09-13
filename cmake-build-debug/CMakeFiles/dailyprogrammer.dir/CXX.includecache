@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/lorneez/CLionProjects/dailyprogrammer/filecalculator.cpp
+filecalculator.h
+/Users/lorneez/CLionProjects/dailyprogrammer/filecalculator.h
+string
+-
+iostream
+-
+stdio.h
+-
+dirent.h
+-
+sys/stat.h
+-
+fstream
+-
+
+/Users/lorneez/CLionProjects/dailyprogrammer/filecalculator.h
+string
+-
+
