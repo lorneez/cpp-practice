@@ -12,15 +12,13 @@ using namespace std;
 class FileCalculator {
 private:
     unsigned long int totalsize;
-    int GetFileSize(char *dirptr, char *filename);
-    list<string> foldersToVisit;
-    void AddFoldersToList(const char *dirptr);
 public:
     FileCalculator();
     void Init();
     void Show();
     void CalculateRecursively(char *dirptr);
     void CalculateUsingThread(char *dirptr);
+    list<string> foldersToVisit;
 };
 
 #endif //DAILYPROGRAMMER_FILECALCULATOR_H

@@ -17,12 +17,14 @@ stdio.h
 -
 dirent.h
 -
-sys/stat.h
--
 fstream
+-
+pthread.h
 -
 
 /Users/lorneez/CLionProjects/dailyprogrammer/filecalculator.h
 string
+-
+list
 -
 

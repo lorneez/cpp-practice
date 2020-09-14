@@ -11,8 +11,10 @@ void RunDecode() {
 
 void RunFileCalculator() {
     FileCalculator f;
-    f.CalculateRecursively("/Users/lorneez/");
+    // f.CalculateRecursively("/Users/lorneez/");
+    // 9370110329 Bytes!
     f.CalculateUsingThread("/Users/lorneez/");
+    // 16485208216 Bytes!
     f.Show();
 }
 
