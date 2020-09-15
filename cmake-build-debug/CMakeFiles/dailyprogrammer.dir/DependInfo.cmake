@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/lorneez/CLionProjects/dailyprogrammer/decode.cpp" "/Users/lorneez/CLionProjects/dailyprogrammer/cmake-build-debug/CMakeFiles/dailyprogrammer.dir/decode.cpp.o"
   "/Users/lorneez/CLionProjects/dailyprogrammer/filecalculator.cpp" "/Users/lorneez/CLionProjects/dailyprogrammer/cmake-build-debug/CMakeFiles/dailyprogrammer.dir/filecalculator.cpp.o"
   "/Users/lorneez/CLionProjects/dailyprogrammer/main.cpp" "/Users/lorneez/CLionProjects/dailyprogrammer/cmake-build-debug/CMakeFiles/dailyprogrammer.dir/main.cpp.o"
+  "/Users/lorneez/CLionProjects/dailyprogrammer/mandelbrot.cpp" "/Users/lorneez/CLionProjects/dailyprogrammer/cmake-build-debug/CMakeFiles/dailyprogrammer.dir/mandelbrot.cpp.o"
   "/Users/lorneez/CLionProjects/dailyprogrammer/smorse.cpp" "/Users/lorneez/CLionProjects/dailyprogrammer/cmake-build-debug/CMakeFiles/dailyprogrammer.dir/smorse.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")

@@ -10,7 +10,11 @@ CMakeFiles/dailyprogrammer.dir/filecalculator.cpp.o: ../filecalculator.h
 CMakeFiles/dailyprogrammer.dir/main.cpp.o: ../decode.h
 CMakeFiles/dailyprogrammer.dir/main.cpp.o: ../filecalculator.h
 CMakeFiles/dailyprogrammer.dir/main.cpp.o: ../main.cpp
+CMakeFiles/dailyprogrammer.dir/main.cpp.o: ../mandelbrot.h
 CMakeFiles/dailyprogrammer.dir/main.cpp.o: ../smorse.h
+
+CMakeFiles/dailyprogrammer.dir/mandelbrot.cpp.o: ../mandelbrot.cpp
+CMakeFiles/dailyprogrammer.dir/mandelbrot.cpp.o: ../mandelbrot.h
 
 CMakeFiles/dailyprogrammer.dir/smorse.cpp.o: ../smorse.cpp
 CMakeFiles/dailyprogrammer.dir/smorse.cpp.o: ../smorse.h

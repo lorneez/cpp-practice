@@ -95,6 +95,12 @@
 		<Unit filename="/Users/lorneez/CLionProjects/dailyprogrammer/main.cpp">
 			<Option target="dailyprogrammer"/>
 		</Unit>
+		<Unit filename="/Users/lorneez/CLionProjects/dailyprogrammer/mandelbrot.cpp">
+			<Option target="dailyprogrammer"/>
+		</Unit>
+		<Unit filename="/Users/lorneez/CLionProjects/dailyprogrammer/mandelbrot.h">
+			<Option target="dailyprogrammer"/>
+		</Unit>
 		<Unit filename="/Users/lorneez/CLionProjects/dailyprogrammer/smorse.cpp">
 			<Option target="dailyprogrammer"/>
 		</Unit>

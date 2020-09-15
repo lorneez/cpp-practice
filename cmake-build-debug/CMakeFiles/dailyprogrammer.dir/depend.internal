@@ -11,7 +11,11 @@ CMakeFiles/dailyprogrammer.dir/main.cpp.o
  /Users/lorneez/CLionProjects/dailyprogrammer/decode.h
  /Users/lorneez/CLionProjects/dailyprogrammer/filecalculator.h
  /Users/lorneez/CLionProjects/dailyprogrammer/main.cpp
+ /Users/lorneez/CLionProjects/dailyprogrammer/mandelbrot.h
  /Users/lorneez/CLionProjects/dailyprogrammer/smorse.h
+CMakeFiles/dailyprogrammer.dir/mandelbrot.cpp.o
+ /Users/lorneez/CLionProjects/dailyprogrammer/mandelbrot.cpp
+ /Users/lorneez/CLionProjects/dailyprogrammer/mandelbrot.h
 CMakeFiles/dailyprogrammer.dir/smorse.cpp.o
  /Users/lorneez/CLionProjects/dailyprogrammer/smorse.cpp
  /Users/lorneez/CLionProjects/dailyprogrammer/smorse.h

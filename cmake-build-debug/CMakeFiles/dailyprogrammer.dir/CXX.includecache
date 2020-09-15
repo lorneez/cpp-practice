@@ -6,6 +6,14 @@
 
 #IncludeRegexTransform: 
 
+/Users/lorneez/CLionProjects/dailyprogrammer/decode.h
+string
+-
+list
+-
+map
+-
+
 /Users/lorneez/CLionProjects/dailyprogrammer/filecalculator.cpp
 filecalculator.h
 /Users/lorneez/CLionProjects/dailyprogrammer/filecalculator.h
@@ -13,18 +21,42 @@ string
 -
 iostream
 -
-stdio.h
+cstdio
 -
 dirent.h
 -
 fstream
 -
-pthread.h
+thread
+-
+mutex
+-
+atomic
 -
 
 /Users/lorneez/CLionProjects/dailyprogrammer/filecalculator.h
 string
 -
 list
+-
+mutex
+-
+
+/Users/lorneez/CLionProjects/dailyprogrammer/main.cpp
+smorse.h
+/Users/lorneez/CLionProjects/dailyprogrammer/smorse.h
+decode.h
+/Users/lorneez/CLionProjects/dailyprogrammer/decode.h
+filecalculator.h
+/Users/lorneez/CLionProjects/dailyprogrammer/filecalculator.h
+mandelbrot.h
+/Users/lorneez/CLionProjects/dailyprogrammer/mandelbrot.h
+
+/Users/lorneez/CLionProjects/dailyprogrammer/mandelbrot.h
+
+/Users/lorneez/CLionProjects/dailyprogrammer/smorse.h
+string
+-
+map
 -
 

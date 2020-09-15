@@ -224,6 +224,33 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dailyprogrammer.dir/build.make CMakeFiles/dailyprogrammer.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+mandelbrot.o: mandelbrot.cpp.o
+
+.PHONY : mandelbrot.o
+
+# target to build an object file
+mandelbrot.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dailyprogrammer.dir/build.make CMakeFiles/dailyprogrammer.dir/mandelbrot.cpp.o
+.PHONY : mandelbrot.cpp.o
+
+mandelbrot.i: mandelbrot.cpp.i
+
+.PHONY : mandelbrot.i
+
+# target to preprocess a source file
+mandelbrot.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dailyprogrammer.dir/build.make CMakeFiles/dailyprogrammer.dir/mandelbrot.cpp.i
+.PHONY : mandelbrot.cpp.i
+
+mandelbrot.s: mandelbrot.cpp.s
+
+.PHONY : mandelbrot.s
+
+# target to generate assembly for a file
+mandelbrot.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dailyprogrammer.dir/build.make CMakeFiles/dailyprogrammer.dir/mandelbrot.cpp.s
+.PHONY : mandelbrot.cpp.s
+
 smorse.o: smorse.cpp.o
 
 .PHONY : smorse.o
@@ -269,6 +296,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... mandelbrot.o"
+	@echo "... mandelbrot.i"
+	@echo "... mandelbrot.s"
 	@echo "... smorse.o"
 	@echo "... smorse.i"
 	@echo "... smorse.s"
