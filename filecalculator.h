@@ -6,19 +6,24 @@
 #define DAILYPROGRAMMER_FILECALCULATOR_H
 #include <string>
 #include <list>
+#include <mutex>
 
 using namespace std;
 
 class FileCalculator {
 private:
     unsigned long int totalsize;
+    list<string> foldersToVisit;
+    mutex mtx;
+    void MTAccessList();
+    void MTFindFoldersAndFiles(char *dir);
 public:
     FileCalculator();
     void Init();
     void Show();
     void CalculateRecursively(char *dirptr);
-    void CalculateUsingThread(char *dirptr);
-    list<string> foldersToVisit;
+    void CalculateUsingThreadLoop(char *dirptr);
+    void CalculateUsingMultiThreading(char *dirptr);
 };
 
 #endif //DAILYPROGRAMMER_FILECALCULATOR_H
