@@ -15,6 +15,7 @@ private:
     unsigned long int totalsize;
     list<string> foldersToVisit;
     mutex mtx;
+    atomic<int> MTCounter;
     void MTAccessList();
     void MTFindFoldersAndFiles(char *dir);
 public:

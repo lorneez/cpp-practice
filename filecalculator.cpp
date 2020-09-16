@@ -174,26 +174,22 @@ void FileCalculator::Show() {
 void FileCalculator::CalculateUsingMultiThreading(char *dirptr) {
     string folder(dirptr);
     foldersToVisit.push_front(folder);
-
     // not sure if this loop is correct. keep on checking if the folder is not empty.
-    while(!foldersToVisit.empty()) {
 
-        // create thread 1
-        thread t1(&FileCalculator::MTAccessList, this);
+    // create thread 1
+    thread t1(&FileCalculator::MTAccessList, this);
 
-        // create thread 2
-        thread t2(&FileCalculator::MTAccessList, this);
+    // create thread 2
+    thread t2(&FileCalculator::MTAccessList, this);
 
-        // join threads
-        t1.join();
-        t2.join();
-    }
+    // join threads
+    t1.join();
+    t2.join();
 }
 
 void FileCalculator::MTAccessList() {
 
     // infinite loop
-    int fails = 0;
     while(true)
     {
         {
@@ -202,7 +198,10 @@ void FileCalculator::MTAccessList() {
 
             // check if list is empty
             if(!foldersToVisit.empty()) {
-                fails = 0;
+
+                // update atomic counter: thread is active
+                // cout << "Thread is active" << endl;
+                MTCounter++;
 
                 // get and remove next folder
 
@@ -228,14 +227,17 @@ void FileCalculator::MTAccessList() {
 
                 // delete nextFolder pointer
                 delete[] nextFolder;
+
+                // update atomic counter: thread deposited folders
+                // cout << "Thread deposited folder" << endl;
+                MTCounter--;
             }
 
                 // if list empty, break;
             else {
                 mtx.unlock();
-                fails ++;
-                if(fails == 15) {
-                    cout << "exit thread" << endl;
+                if(MTCounter == 0) {
+                    cout << "Thread exited" << endl;
                     break;
                 }
             }
