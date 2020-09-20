@@ -11,13 +11,6 @@
 using namespace std;
 
 class FileCalculator {
-private:
-    unsigned long int totalsize;
-    list<string> foldersToVisit;
-    mutex mtx;
-    atomic<int> MTCounter;
-    void MTAccessList();
-    void MTFindFoldersAndFiles(char *dir);
 public:
     FileCalculator();
     void Init();
@@ -25,6 +18,13 @@ public:
     void CalculateRecursively(char *dirptr);
     void CalculateUsingThreadLoop(char *dirptr);
     void CalculateUsingMultiThreading(char *dirptr);
+private:
+    unsigned long int totalsize;
+    list<string> foldersToVisit;
+    mutex mtx;
+    atomic<int> MTCounter;
+    void MTAccessList();
+    void MTFindFoldersAndFiles(char *dir);
 };
 
 #endif //DAILYPROGRAMMER_FILECALCULATOR_H

@@ -4,11 +4,26 @@
 CMakeFiles/dailyprogrammer.dir/decode.cpp.o: ../decode.cpp
 CMakeFiles/dailyprogrammer.dir/decode.cpp.o: ../decode.h
 
+CMakeFiles/dailyprogrammer.dir/fibjob.cpp.o: ../fibjob.cpp
+CMakeFiles/dailyprogrammer.dir/fibjob.cpp.o: ../fibjob.h
+CMakeFiles/dailyprogrammer.dir/fibjob.cpp.o: ../job.h
+CMakeFiles/dailyprogrammer.dir/fibjob.cpp.o: ../jobqueue.h
+CMakeFiles/dailyprogrammer.dir/fibjob.cpp.o: ../threadpool.h
+
 CMakeFiles/dailyprogrammer.dir/filecalculator.cpp.o: ../filecalculator.cpp
 CMakeFiles/dailyprogrammer.dir/filecalculator.cpp.o: ../filecalculator.h
 
+CMakeFiles/dailyprogrammer.dir/job.cpp.o: ../job.cpp
+CMakeFiles/dailyprogrammer.dir/job.cpp.o: ../job.h
+
+CMakeFiles/dailyprogrammer.dir/jobqueue.cpp.o: ../job.h
+CMakeFiles/dailyprogrammer.dir/jobqueue.cpp.o: ../jobqueue.cpp
+CMakeFiles/dailyprogrammer.dir/jobqueue.cpp.o: ../jobqueue.h
+
 CMakeFiles/dailyprogrammer.dir/main.cpp.o: ../decode.h
+CMakeFiles/dailyprogrammer.dir/main.cpp.o: ../fibjob.h
 CMakeFiles/dailyprogrammer.dir/main.cpp.o: ../filecalculator.h
+CMakeFiles/dailyprogrammer.dir/main.cpp.o: ../job.h
 CMakeFiles/dailyprogrammer.dir/main.cpp.o: ../main.cpp
 CMakeFiles/dailyprogrammer.dir/main.cpp.o: ../mandelbrot.h
 CMakeFiles/dailyprogrammer.dir/main.cpp.o: ../smorse.h
@@ -18,4 +33,9 @@ CMakeFiles/dailyprogrammer.dir/mandelbrot.cpp.o: ../mandelbrot.h
 
 CMakeFiles/dailyprogrammer.dir/smorse.cpp.o: ../smorse.cpp
 CMakeFiles/dailyprogrammer.dir/smorse.cpp.o: ../smorse.h
+
+CMakeFiles/dailyprogrammer.dir/threadpool.cpp.o: ../job.h
+CMakeFiles/dailyprogrammer.dir/threadpool.cpp.o: ../jobqueue.h
+CMakeFiles/dailyprogrammer.dir/threadpool.cpp.o: ../threadpool.cpp
+CMakeFiles/dailyprogrammer.dir/threadpool.cpp.o: ../threadpool.h
 

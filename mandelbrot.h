@@ -7,6 +7,9 @@
 
 
 class Mandelbrot {
+public:
+    Mandelbrot(double width, double height);
+    void Display();
 private:
     double width;
     double height;
@@ -19,9 +22,6 @@ private:
     double MapToReal(int x);
     double MapToImaginary(int y);
     int CheckMandelbrot(double cr, double ci);
-public:
-    Mandelbrot(double width, double height);
-    void Display();
 };
 
 #endif //DAILYPROGRAMMER_MANDELBROT_H

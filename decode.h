@@ -11,17 +11,16 @@
 using namespace std;
 
 class Decode {
-private:
-    string input;
-    list<string> possibleConversions;
-    string converted;
-    map<string, char> morseTable;
-
 public:
     Decode(string input);
     void InitTable();
     void Convert();
     void ShowText();
+private:
+    string input;
+    list<string> possibleConversions;
+    string converted;
+    map<string, char> morseTable;
 };
 
 #endif //DAILYPROGRAMMER_DECODE_H

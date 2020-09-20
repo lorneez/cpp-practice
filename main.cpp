@@ -2,7 +2,7 @@
 #include "decode.h"
 #include "filecalculator.h"
 #include "mandelbrot.h"
-
+#include "fibjob.h"
 
 void RunDecode() {
     Smorse s("lorne");
@@ -27,12 +27,19 @@ void RunFileCalculator() {
 }
 
 void RunMandelbrot() {
-    Mandelbrot m(5000, 5000);
+    Mandelbrot m(100, 100);
     m.Display();
 }
 
+void RunFibThreadPool() {
+    FibJob f(1);
+    f.fibmain();
+}
+
 int main() {
+    // RunDecode();
     // RunMandelbrot();
-    RunFileCalculator();
+    // RunFileCalculator();
+    RunFibThreadPool();
     return 0;
 }

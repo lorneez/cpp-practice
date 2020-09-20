@@ -142,13 +142,69 @@ CMakeFiles/dailyprogrammer.dir/mandelbrot.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dailyprogrammer.dir/mandelbrot.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lorneez/CLionProjects/dailyprogrammer/mandelbrot.cpp -o CMakeFiles/dailyprogrammer.dir/mandelbrot.cpp.s
 
+CMakeFiles/dailyprogrammer.dir/threadpool.cpp.o: CMakeFiles/dailyprogrammer.dir/flags.make
+CMakeFiles/dailyprogrammer.dir/threadpool.cpp.o: ../threadpool.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lorneez/CLionProjects/dailyprogrammer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/dailyprogrammer.dir/threadpool.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dailyprogrammer.dir/threadpool.cpp.o -c /Users/lorneez/CLionProjects/dailyprogrammer/threadpool.cpp
+
+CMakeFiles/dailyprogrammer.dir/threadpool.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dailyprogrammer.dir/threadpool.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lorneez/CLionProjects/dailyprogrammer/threadpool.cpp > CMakeFiles/dailyprogrammer.dir/threadpool.cpp.i
+
+CMakeFiles/dailyprogrammer.dir/threadpool.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dailyprogrammer.dir/threadpool.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lorneez/CLionProjects/dailyprogrammer/threadpool.cpp -o CMakeFiles/dailyprogrammer.dir/threadpool.cpp.s
+
+CMakeFiles/dailyprogrammer.dir/job.cpp.o: CMakeFiles/dailyprogrammer.dir/flags.make
+CMakeFiles/dailyprogrammer.dir/job.cpp.o: ../job.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lorneez/CLionProjects/dailyprogrammer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/dailyprogrammer.dir/job.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dailyprogrammer.dir/job.cpp.o -c /Users/lorneez/CLionProjects/dailyprogrammer/job.cpp
+
+CMakeFiles/dailyprogrammer.dir/job.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dailyprogrammer.dir/job.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lorneez/CLionProjects/dailyprogrammer/job.cpp > CMakeFiles/dailyprogrammer.dir/job.cpp.i
+
+CMakeFiles/dailyprogrammer.dir/job.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dailyprogrammer.dir/job.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lorneez/CLionProjects/dailyprogrammer/job.cpp -o CMakeFiles/dailyprogrammer.dir/job.cpp.s
+
+CMakeFiles/dailyprogrammer.dir/jobqueue.cpp.o: CMakeFiles/dailyprogrammer.dir/flags.make
+CMakeFiles/dailyprogrammer.dir/jobqueue.cpp.o: ../jobqueue.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lorneez/CLionProjects/dailyprogrammer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/dailyprogrammer.dir/jobqueue.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dailyprogrammer.dir/jobqueue.cpp.o -c /Users/lorneez/CLionProjects/dailyprogrammer/jobqueue.cpp
+
+CMakeFiles/dailyprogrammer.dir/jobqueue.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dailyprogrammer.dir/jobqueue.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lorneez/CLionProjects/dailyprogrammer/jobqueue.cpp > CMakeFiles/dailyprogrammer.dir/jobqueue.cpp.i
+
+CMakeFiles/dailyprogrammer.dir/jobqueue.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dailyprogrammer.dir/jobqueue.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lorneez/CLionProjects/dailyprogrammer/jobqueue.cpp -o CMakeFiles/dailyprogrammer.dir/jobqueue.cpp.s
+
+CMakeFiles/dailyprogrammer.dir/fibjob.cpp.o: CMakeFiles/dailyprogrammer.dir/flags.make
+CMakeFiles/dailyprogrammer.dir/fibjob.cpp.o: ../fibjob.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lorneez/CLionProjects/dailyprogrammer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/dailyprogrammer.dir/fibjob.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dailyprogrammer.dir/fibjob.cpp.o -c /Users/lorneez/CLionProjects/dailyprogrammer/fibjob.cpp
+
+CMakeFiles/dailyprogrammer.dir/fibjob.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dailyprogrammer.dir/fibjob.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lorneez/CLionProjects/dailyprogrammer/fibjob.cpp > CMakeFiles/dailyprogrammer.dir/fibjob.cpp.i
+
+CMakeFiles/dailyprogrammer.dir/fibjob.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dailyprogrammer.dir/fibjob.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lorneez/CLionProjects/dailyprogrammer/fibjob.cpp -o CMakeFiles/dailyprogrammer.dir/fibjob.cpp.s
+
 # Object files for target dailyprogrammer
 dailyprogrammer_OBJECTS = \
 "CMakeFiles/dailyprogrammer.dir/main.cpp.o" \
 "CMakeFiles/dailyprogrammer.dir/smorse.cpp.o" \
 "CMakeFiles/dailyprogrammer.dir/decode.cpp.o" \
 "CMakeFiles/dailyprogrammer.dir/filecalculator.cpp.o" \
-"CMakeFiles/dailyprogrammer.dir/mandelbrot.cpp.o"
+"CMakeFiles/dailyprogrammer.dir/mandelbrot.cpp.o" \
+"CMakeFiles/dailyprogrammer.dir/threadpool.cpp.o" \
+"CMakeFiles/dailyprogrammer.dir/job.cpp.o" \
+"CMakeFiles/dailyprogrammer.dir/jobqueue.cpp.o" \
+"CMakeFiles/dailyprogrammer.dir/fibjob.cpp.o"
 
 # External object files for target dailyprogrammer
 dailyprogrammer_EXTERNAL_OBJECTS =
@@ -158,9 +214,13 @@ dailyprogrammer: CMakeFiles/dailyprogrammer.dir/smorse.cpp.o
 dailyprogrammer: CMakeFiles/dailyprogrammer.dir/decode.cpp.o
 dailyprogrammer: CMakeFiles/dailyprogrammer.dir/filecalculator.cpp.o
 dailyprogrammer: CMakeFiles/dailyprogrammer.dir/mandelbrot.cpp.o
+dailyprogrammer: CMakeFiles/dailyprogrammer.dir/threadpool.cpp.o
+dailyprogrammer: CMakeFiles/dailyprogrammer.dir/job.cpp.o
+dailyprogrammer: CMakeFiles/dailyprogrammer.dir/jobqueue.cpp.o
+dailyprogrammer: CMakeFiles/dailyprogrammer.dir/fibjob.cpp.o
 dailyprogrammer: CMakeFiles/dailyprogrammer.dir/build.make
 dailyprogrammer: CMakeFiles/dailyprogrammer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/lorneez/CLionProjects/dailyprogrammer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable dailyprogrammer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/lorneez/CLionProjects/dailyprogrammer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable dailyprogrammer"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/dailyprogrammer.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

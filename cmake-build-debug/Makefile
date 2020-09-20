@@ -170,6 +170,33 @@ decode.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dailyprogrammer.dir/build.make CMakeFiles/dailyprogrammer.dir/decode.cpp.s
 .PHONY : decode.cpp.s
 
+fibjob.o: fibjob.cpp.o
+
+.PHONY : fibjob.o
+
+# target to build an object file
+fibjob.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dailyprogrammer.dir/build.make CMakeFiles/dailyprogrammer.dir/fibjob.cpp.o
+.PHONY : fibjob.cpp.o
+
+fibjob.i: fibjob.cpp.i
+
+.PHONY : fibjob.i
+
+# target to preprocess a source file
+fibjob.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dailyprogrammer.dir/build.make CMakeFiles/dailyprogrammer.dir/fibjob.cpp.i
+.PHONY : fibjob.cpp.i
+
+fibjob.s: fibjob.cpp.s
+
+.PHONY : fibjob.s
+
+# target to generate assembly for a file
+fibjob.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dailyprogrammer.dir/build.make CMakeFiles/dailyprogrammer.dir/fibjob.cpp.s
+.PHONY : fibjob.cpp.s
+
 filecalculator.o: filecalculator.cpp.o
 
 .PHONY : filecalculator.o
@@ -196,6 +223,60 @@ filecalculator.s: filecalculator.cpp.s
 filecalculator.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dailyprogrammer.dir/build.make CMakeFiles/dailyprogrammer.dir/filecalculator.cpp.s
 .PHONY : filecalculator.cpp.s
+
+job.o: job.cpp.o
+
+.PHONY : job.o
+
+# target to build an object file
+job.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dailyprogrammer.dir/build.make CMakeFiles/dailyprogrammer.dir/job.cpp.o
+.PHONY : job.cpp.o
+
+job.i: job.cpp.i
+
+.PHONY : job.i
+
+# target to preprocess a source file
+job.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dailyprogrammer.dir/build.make CMakeFiles/dailyprogrammer.dir/job.cpp.i
+.PHONY : job.cpp.i
+
+job.s: job.cpp.s
+
+.PHONY : job.s
+
+# target to generate assembly for a file
+job.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dailyprogrammer.dir/build.make CMakeFiles/dailyprogrammer.dir/job.cpp.s
+.PHONY : job.cpp.s
+
+jobqueue.o: jobqueue.cpp.o
+
+.PHONY : jobqueue.o
+
+# target to build an object file
+jobqueue.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dailyprogrammer.dir/build.make CMakeFiles/dailyprogrammer.dir/jobqueue.cpp.o
+.PHONY : jobqueue.cpp.o
+
+jobqueue.i: jobqueue.cpp.i
+
+.PHONY : jobqueue.i
+
+# target to preprocess a source file
+jobqueue.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dailyprogrammer.dir/build.make CMakeFiles/dailyprogrammer.dir/jobqueue.cpp.i
+.PHONY : jobqueue.cpp.i
+
+jobqueue.s: jobqueue.cpp.s
+
+.PHONY : jobqueue.s
+
+# target to generate assembly for a file
+jobqueue.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dailyprogrammer.dir/build.make CMakeFiles/dailyprogrammer.dir/jobqueue.cpp.s
+.PHONY : jobqueue.cpp.s
 
 main.o: main.cpp.o
 
@@ -278,6 +359,33 @@ smorse.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dailyprogrammer.dir/build.make CMakeFiles/dailyprogrammer.dir/smorse.cpp.s
 .PHONY : smorse.cpp.s
 
+threadpool.o: threadpool.cpp.o
+
+.PHONY : threadpool.o
+
+# target to build an object file
+threadpool.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dailyprogrammer.dir/build.make CMakeFiles/dailyprogrammer.dir/threadpool.cpp.o
+.PHONY : threadpool.cpp.o
+
+threadpool.i: threadpool.cpp.i
+
+.PHONY : threadpool.i
+
+# target to preprocess a source file
+threadpool.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dailyprogrammer.dir/build.make CMakeFiles/dailyprogrammer.dir/threadpool.cpp.i
+.PHONY : threadpool.cpp.i
+
+threadpool.s: threadpool.cpp.s
+
+.PHONY : threadpool.s
+
+# target to generate assembly for a file
+threadpool.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dailyprogrammer.dir/build.make CMakeFiles/dailyprogrammer.dir/threadpool.cpp.s
+.PHONY : threadpool.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -290,9 +398,18 @@ help:
 	@echo "... decode.o"
 	@echo "... decode.i"
 	@echo "... decode.s"
+	@echo "... fibjob.o"
+	@echo "... fibjob.i"
+	@echo "... fibjob.s"
 	@echo "... filecalculator.o"
 	@echo "... filecalculator.i"
 	@echo "... filecalculator.s"
+	@echo "... job.o"
+	@echo "... job.i"
+	@echo "... job.s"
+	@echo "... jobqueue.o"
+	@echo "... jobqueue.i"
+	@echo "... jobqueue.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
@@ -302,6 +419,9 @@ help:
 	@echo "... smorse.o"
 	@echo "... smorse.i"
 	@echo "... smorse.s"
+	@echo "... threadpool.o"
+	@echo "... threadpool.i"
+	@echo "... threadpool.s"
 .PHONY : help
 
 

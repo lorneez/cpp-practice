@@ -10,16 +10,15 @@
 using namespace std;
 
 class Smorse {
-private:
-    string input;
-    string converted;
-    map<char, string> morseTable;
-
 public:
     Smorse(string input);
     void InitTable();
     void Convert();
     void ShowText();
+private:
+    string input;
+    string converted;
+    map<char, string> morseTable;
 };
 
 #endif //DAILYPROGRAMMER_SMORSE_H
