@@ -5,7 +5,7 @@
 #ifndef DAILYPROGRAMMER_THREADPOOL_H
 #define DAILYPROGRAMMER_THREADPOOL_H
 
-#include <thread>
+#include <pthread.h>
 #include "jobqueue.h"
 
 using namespace std;
@@ -20,7 +20,7 @@ public:
     void waitForCompletion();
 
 private:
-    thread* t;
+    pthread_t* t;
     int numThreads;
     JobQueue jobQueue;
 };

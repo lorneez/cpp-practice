@@ -22,26 +22,22 @@ void JobQueue::addJob(Job* ptr) {
 
 Job* JobQueue::getJob() {
     Job* ptr;
-    mtx.lock();
-    if(finished && jobs.size() == 0) {
-        ptr = 0;
+    bool success = false;
+    while(!success) { // loop until queue is full
+        mtx.lock();
+        if(jobs.size() == 0) {
+            if(finished) {
+                ptr = nullptr;
+                success = true;
+            }
+        }
+        else {
+            ptr = jobs.front();
+            jobs.pop();
+            success = true;
+        }
         mtx.unlock();
     }
-    else {
-        if(jobs.size() == 0) { // check if the queue is empty
-            mtx.unlock(); // unlock
-            while(jobs.size() == 0) { // loop until queue is full
-                if(finished) {
-                    return 0;
-                }
-            }
-            mtx.lock(); // lock
-        }
-        // get job
-        ptr = jobs.front();
-        jobs.pop();
-        mtx.unlock();
-    };
     return ptr;
 }
 

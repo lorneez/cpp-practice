@@ -13,7 +13,7 @@ public:
     ~FibJob();
     virtual void run();
     virtual void indicateTaken();
-    int fibmain();
+    int fibmain(int n);
 private:
     int innerFib(int n);
     int n;

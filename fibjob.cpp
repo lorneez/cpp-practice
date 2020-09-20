@@ -5,12 +5,16 @@
 #include "fibjob.h"
 #include <mutex>
 #include "threadpool.h"
+#include <ctime>
+#include <iostream>
+
 using namespace std;
 
-static mutex gmtx;
-void showTask(int n) {
+static mutex gmtx; // global mutex
+
+void showTask(int n) { // print starting task
     gmtx.lock();
-    printf("Adding fibonacci task %d\n", n);
+    // printf("Adding fibonacci task %d\n", n);
     gmtx.unlock();
 }
 
@@ -18,26 +22,26 @@ FibJob::FibJob(int n) : Job(){
     this->n = n;
 }
 
-FibJob::~FibJob() {
+FibJob::~FibJob() { // deconstructor, print delete task
     gmtx.lock();
-    printf("Fibonacci task %d being deleted\n", n);
+    // printf("Fibonacci task %d being deleted\n", n);
     gmtx.unlock();
 }
 
-void FibJob::run(){
+void FibJob::run(){ // running fib task
     int val = innerFib(n);
     gmtx.lock();
-    printf("Fib %d = %d\n",n, val);
+    // printf("Fib %d = %d\n",n, val);
     gmtx.unlock();
 }
 
 void FibJob::indicateTaken() {
     gmtx.lock();
-    printf("Took fibonacci task %d\n", n);
+    // printf("Took fibonacci task %d\n", n);
     gmtx.unlock();
 }
 
-int FibJob::innerFib(int n) {
+int FibJob::innerFib(int n) { // fib logic
     if(n<=1) {
         return 1;
     }
@@ -46,15 +50,19 @@ int FibJob::innerFib(int n) {
     }
 }
 
-int FibJob::fibmain() {
-    ThreadPool *tp = new ThreadPool(8);
-    for (int i=0;i<30; ++i) {
-        int rv = rand() % 30 + 9;
-        showTask(rv);
-        tp->addJob(new FibJob(rv));
+int FibJob::fibmain(int n) {
+    cout << "start: " << n << endl;
+    ThreadPool *tp = new ThreadPool(n); // new thread pool with 8 threads
+    clock_t start = clock();
+    for (int i=0;i<30; ++i) { // lets make 50 fib numbers
+        // int rv = rand() % 20 + 3; // generate random number
+        showTask(i);
+        tp->addJob(new FibJob(i)); // give thread pool the task
     }
-    tp->finish();
-    tp->waitForCompletion();
-    delete tp;
-    printf("Done with all work!\n");
+    tp->finish(); // finish pool
+    tp->waitForCompletion(); // wait for pool to complete
+    delete tp; // delete pool
+    // printf("Done with all work!\n");
+    double duration = (clock() - start) / (double) CLOCKS_PER_SEC;
+    cout << n << " DURATION: " << duration << endl;
 }

@@ -9,7 +9,7 @@
 class Job {
 public:
     Job() {}
-    ~Job() {} // destructor
+    ~Job() = default; // destructor
     // virtual functions are overridden in runtime by a derived class, a class that extends it
     virtual void run()=0; // run the Job
     virtual void indicateTaken()=0; // indicate if thread has taken Job

@@ -33,7 +33,9 @@ void RunMandelbrot() {
 
 void RunFibThreadPool() {
     FibJob f(1);
-    f.fibmain();
+    for(int i=1; i<20; i++) {
+        f.fibmain(i);
+    }
 }
 
 int main() {

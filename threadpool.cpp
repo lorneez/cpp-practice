@@ -3,34 +3,33 @@
 //
 
 #include "threadpool.h"
-#include <iostream>
 
 using namespace std;
 
 
 static void* getWork(void* param) {
-    Job* ptr = 0; // new job
-    JobQueue* jqptr = (JobQueue*)param; // job queue
+    Job* ptr = nullptr; // new job
+    auto* jqptr = (JobQueue*)param; // job queue
     while(ptr = jqptr->getJob()) { // while job queue has jobs get a job
         ptr->indicateTaken(); // this job is taken
         ptr->run(); // run this job
         delete ptr;
     }
-    return 0;
+    return nullptr;
 }
 
 ThreadPool::ThreadPool(int numThreads) {
     this->numThreads = numThreads;
-    t = new thread[numThreads];
+    t = new pthread_t[numThreads];
     for(int i=0; i<numThreads; i++) {
-        t[i] = thread(getWork, &jobQueue);
+        pthread_create(&(t[i]), 0, getWork, &jobQueue);
     }
 }
 
 ThreadPool::~ThreadPool() {
     jobQueue.finish(); // job queue done
     for(int i=0; i<numThreads; i++) { // join all threads
-        t[i].join();
+        pthread_join(t[i], 0);
     }
     delete [] t; // delete threads
 }
