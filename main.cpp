@@ -55,7 +55,7 @@ void RunFibThreadPool() {
  * Test for image converter
  */
 void RunImageConverted() {
-    ImageConverter i("../Cyan.png", "../test.txt");
+    ImageConverter i("../Cyan.bmp", "../test.txt");
     i.run();
 }
 

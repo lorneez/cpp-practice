@@ -5,9 +5,9 @@
 #ifndef DAILYPROGRAMMER_IMAGECONVERTER_H
 #define DAILYPROGRAMMER_IMAGECONVERTER_H
 
-#define MAXHEIGHT 500
-#define MAXWIDTH 500
-#define MAXLENGTH 250000
+#define MAXHEIGHT 1000
+#define MAXWIDTH 1000
+#define MAXLENGTH 1000000
 #include "job.h"
 #include <iostream>
 #include <fstream>
@@ -16,15 +16,15 @@ using namespace std;
 
 class ImageConverter : public Job {
 public:
-    ImageConverter(string jpeg, string ascii);
+    ImageConverter(char const * bmp, string ascii);
     virtual void run();
     virtual void indicateTaken();
 
 private:
     void processImage(unsigned char image[MAXLENGTH], int rowref, int colref);
-    void convertImage(unsigned char image[MAXLENGTH],int rowref, int colref, char ascii[100][100]);
-    void writeImage(string& textFileName, char ascii[100][100], int rowref, int colref);
-    string pngFile;
+    void convertImage(unsigned char image[MAXLENGTH],int rowref, int colref, char ascii[32][32]);
+    void writeImage(string& textFileName, char ascii[32][32], int rowref, int colref);
+    const char* bmpFile;
     string asciiFile;
 };
 
