@@ -19,7 +19,7 @@ public:
     void finish();
     bool hasJobs();
 private:
-    queue<Job*> jobs; // a queue of Job pointers
+    queue<Job*> jobs; // a queue of Job unique pointers
     bool finished;
     mutex mtx;
 };

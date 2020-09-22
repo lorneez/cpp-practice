@@ -14,7 +14,7 @@ static mutex gmtx; // global mutex
 
 void showTask(int n) { // print starting task
     gmtx.lock();
-    // printf("Adding fibonacci task %d\n", n);
+    printf("Adding fibonacci task %d\n", n);
     gmtx.unlock();
 }
 
@@ -24,20 +24,20 @@ FibJob::FibJob(int n) : Job(){
 
 FibJob::~FibJob() { // deconstructor, print delete task
     gmtx.lock();
-    // printf("Fibonacci task %d being deleted\n", n);
+    printf("Fibonacci task %d being deleted\n", n);
     gmtx.unlock();
 }
 
 void FibJob::run(){ // running fib task
     int val = innerFib(n);
     gmtx.lock();
-    // printf("Fib %d = %d\n",n, val);
+    printf("Fib %d = %d\n",n, val);
     gmtx.unlock();
 }
 
 void FibJob::indicateTaken() {
     gmtx.lock();
-    // printf("Took fibonacci task %d\n", n);
+    printf("Took fibonacci task %d\n", n);
     gmtx.unlock();
 }
 
@@ -52,17 +52,17 @@ int FibJob::innerFib(int n) { // fib logic
 
 int FibJob::fibmain(int n) {
     cout << "start: " << n << endl;
-    ThreadPool *tp = new ThreadPool(n); // new thread pool with 8 threads
+    unique_ptr<ThreadPool> poolPtr(new ThreadPool(n)); // new thread pool with 8 threads
     clock_t start = clock();
     for (int i=0;i<30; ++i) { // lets make 50 fib numbers
         // int rv = rand() % 20 + 3; // generate random number
         showTask(i);
-        tp->addJob(new FibJob(i)); // give thread pool the task
+        // unique_ptr<FibJob> jobPtr(new FibJob(i));
+        poolPtr->addJob(new FibJob(i)); // give thread pool the task
     }
-    tp->finish(); // finish pool
-    tp->waitForCompletion(); // wait for pool to complete
-    delete tp; // delete pool
-    // printf("Done with all work!\n");
+    poolPtr->finish(); // finish pool
+    poolPtr->waitForCompletion(); // wait for pool to complete
+    printf("Done with all work!\n");
     double duration = (clock() - start) / (double) CLOCKS_PER_SEC;
     cout << n << " DURATION: " << duration << endl;
 }

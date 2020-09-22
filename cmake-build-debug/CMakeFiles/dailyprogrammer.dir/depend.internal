@@ -13,6 +13,10 @@ CMakeFiles/dailyprogrammer.dir/fibjob.cpp.o
 CMakeFiles/dailyprogrammer.dir/filecalculator.cpp.o
  /Users/lorneez/CLionProjects/dailyprogrammer/filecalculator.cpp
  /Users/lorneez/CLionProjects/dailyprogrammer/filecalculator.h
+CMakeFiles/dailyprogrammer.dir/imageconverter.cpp.o
+ /Users/lorneez/CLionProjects/dailyprogrammer/imageconverter.cpp
+ /Users/lorneez/CLionProjects/dailyprogrammer/imageconverter.h
+ /Users/lorneez/CLionProjects/dailyprogrammer/job.h
 CMakeFiles/dailyprogrammer.dir/job.cpp.o
  /Users/lorneez/CLionProjects/dailyprogrammer/job.cpp
  /Users/lorneez/CLionProjects/dailyprogrammer/job.h
@@ -24,6 +28,7 @@ CMakeFiles/dailyprogrammer.dir/main.cpp.o
  /Users/lorneez/CLionProjects/dailyprogrammer/decode.h
  /Users/lorneez/CLionProjects/dailyprogrammer/fibjob.h
  /Users/lorneez/CLionProjects/dailyprogrammer/filecalculator.h
+ /Users/lorneez/CLionProjects/dailyprogrammer/imageconverter.h
  /Users/lorneez/CLionProjects/dailyprogrammer/job.h
  /Users/lorneez/CLionProjects/dailyprogrammer/main.cpp
  /Users/lorneez/CLionProjects/dailyprogrammer/mandelbrot.h

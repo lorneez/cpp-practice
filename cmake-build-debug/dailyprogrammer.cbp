@@ -98,6 +98,12 @@
 		<Unit filename="/Users/lorneez/CLionProjects/dailyprogrammer/filecalculator.h">
 			<Option target="dailyprogrammer"/>
 		</Unit>
+		<Unit filename="/Users/lorneez/CLionProjects/dailyprogrammer/imageconverter.cpp">
+			<Option target="dailyprogrammer"/>
+		</Unit>
+		<Unit filename="/Users/lorneez/CLionProjects/dailyprogrammer/imageconverter.h">
+			<Option target="dailyprogrammer"/>
+		</Unit>
 		<Unit filename="/Users/lorneez/CLionProjects/dailyprogrammer/job.cpp">
 			<Option target="dailyprogrammer"/>
 		</Unit>

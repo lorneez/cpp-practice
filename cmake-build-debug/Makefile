@@ -224,6 +224,33 @@ filecalculator.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dailyprogrammer.dir/build.make CMakeFiles/dailyprogrammer.dir/filecalculator.cpp.s
 .PHONY : filecalculator.cpp.s
 
+imageconverter.o: imageconverter.cpp.o
+
+.PHONY : imageconverter.o
+
+# target to build an object file
+imageconverter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dailyprogrammer.dir/build.make CMakeFiles/dailyprogrammer.dir/imageconverter.cpp.o
+.PHONY : imageconverter.cpp.o
+
+imageconverter.i: imageconverter.cpp.i
+
+.PHONY : imageconverter.i
+
+# target to preprocess a source file
+imageconverter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dailyprogrammer.dir/build.make CMakeFiles/dailyprogrammer.dir/imageconverter.cpp.i
+.PHONY : imageconverter.cpp.i
+
+imageconverter.s: imageconverter.cpp.s
+
+.PHONY : imageconverter.s
+
+# target to generate assembly for a file
+imageconverter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dailyprogrammer.dir/build.make CMakeFiles/dailyprogrammer.dir/imageconverter.cpp.s
+.PHONY : imageconverter.cpp.s
+
 job.o: job.cpp.o
 
 .PHONY : job.o
@@ -404,6 +431,9 @@ help:
 	@echo "... filecalculator.o"
 	@echo "... filecalculator.i"
 	@echo "... filecalculator.s"
+	@echo "... imageconverter.o"
+	@echo "... imageconverter.i"
+	@echo "... imageconverter.s"
 	@echo "... job.o"
 	@echo "... job.i"
 	@echo "... job.s"

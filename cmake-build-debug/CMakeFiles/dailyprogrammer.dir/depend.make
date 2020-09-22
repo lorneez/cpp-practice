@@ -13,6 +13,10 @@ CMakeFiles/dailyprogrammer.dir/fibjob.cpp.o: ../threadpool.h
 CMakeFiles/dailyprogrammer.dir/filecalculator.cpp.o: ../filecalculator.cpp
 CMakeFiles/dailyprogrammer.dir/filecalculator.cpp.o: ../filecalculator.h
 
+CMakeFiles/dailyprogrammer.dir/imageconverter.cpp.o: ../imageconverter.cpp
+CMakeFiles/dailyprogrammer.dir/imageconverter.cpp.o: ../imageconverter.h
+CMakeFiles/dailyprogrammer.dir/imageconverter.cpp.o: ../job.h
+
 CMakeFiles/dailyprogrammer.dir/job.cpp.o: ../job.cpp
 CMakeFiles/dailyprogrammer.dir/job.cpp.o: ../job.h
 
@@ -23,6 +27,7 @@ CMakeFiles/dailyprogrammer.dir/jobqueue.cpp.o: ../jobqueue.h
 CMakeFiles/dailyprogrammer.dir/main.cpp.o: ../decode.h
 CMakeFiles/dailyprogrammer.dir/main.cpp.o: ../fibjob.h
 CMakeFiles/dailyprogrammer.dir/main.cpp.o: ../filecalculator.h
+CMakeFiles/dailyprogrammer.dir/main.cpp.o: ../imageconverter.h
 CMakeFiles/dailyprogrammer.dir/main.cpp.o: ../job.h
 CMakeFiles/dailyprogrammer.dir/main.cpp.o: ../main.cpp
 CMakeFiles/dailyprogrammer.dir/main.cpp.o: ../mandelbrot.h

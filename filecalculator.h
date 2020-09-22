@@ -15,9 +15,9 @@ public:
     FileCalculator();
     void Init();
     void Show();
-    void CalculateRecursively(char *dirptr);
-    void CalculateUsingThreadLoop(char *dirptr);
-    void CalculateUsingMultiThreading(char *dirptr);
+    void CalculateRecursively(const char *dirptr);
+    void CalculateUsingThreadLoop(const char *dirptr);
+    void CalculateUsingMultiThreading(const char *dirptr);
 private:
     unsigned long int totalsize;
     list<string> foldersToVisit;

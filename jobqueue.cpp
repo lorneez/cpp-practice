@@ -12,7 +12,7 @@ JobQueue::~JobQueue() {
 
 }
 
-void JobQueue::addJob(Job* ptr) {
+void JobQueue::addJob(Job* ptr) { // add unique pointer
     if(!finished) {
         mtx.lock();
         jobs.push(ptr);
@@ -21,7 +21,7 @@ void JobQueue::addJob(Job* ptr) {
 }
 
 Job* JobQueue::getJob() {
-    Job* ptr;
+    Job* ptr; // -> unqiue pointer
     bool success = false;
     while(!success) { // loop until queue is full
         mtx.lock();

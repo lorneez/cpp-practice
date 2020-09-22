@@ -50,7 +50,7 @@ int GetFileSize(const char *dirptr, char *filename) {
     return file.tellg();
 }
 
-void FileCalculator::CalculateRecursively(char *dirptr) {
+void FileCalculator::CalculateRecursively(const char *dirptr) {
     struct dirent *entry = nullptr; // declares a pointer to dirent struct
 
     printf("Calculating at path: %s\n", dirptr);
@@ -137,7 +137,7 @@ void *AddFoldersToList(void *arg) {
     pthread_exit(NULL);
 }
 
-void FileCalculator::CalculateUsingThreadLoop(char *dirptr) {
+void FileCalculator::CalculateUsingThreadLoop(const char *dirptr) {
     string dir(dirptr);
     foldersToVisit.push_front(dir);
 
@@ -171,7 +171,7 @@ void FileCalculator::Show() {
     cout << totalsize << " Bytes!" << endl;
 }
 
-void FileCalculator::CalculateUsingMultiThreading(char *dirptr) {
+void FileCalculator::CalculateUsingMultiThreading(const char *dirptr) {
     string folder(dirptr);
     foldersToVisit.push_front(folder);
     // not sure if this loop is correct. keep on checking if the folder is not empty.

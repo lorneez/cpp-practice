@@ -6,45 +6,21 @@
 
 #IncludeRegexTransform: 
 
-/Users/lorneez/CLionProjects/dailyprogrammer/decode.h
-string
--
-list
--
-map
--
-
-/Users/lorneez/CLionProjects/dailyprogrammer/fibjob.h
+/Users/lorneez/CLionProjects/dailyprogrammer/imageconverter.cpp
+imageconverter.h
+/Users/lorneez/CLionProjects/dailyprogrammer/imageconverter.h
 job.h
 /Users/lorneez/CLionProjects/dailyprogrammer/job.h
+iostream
+-
 
-/Users/lorneez/CLionProjects/dailyprogrammer/filecalculator.h
-string
+/Users/lorneez/CLionProjects/dailyprogrammer/imageconverter.h
+job.h
+/Users/lorneez/CLionProjects/dailyprogrammer/job.h
+iostream
 -
-list
--
-mutex
+fstream
 -
 
 /Users/lorneez/CLionProjects/dailyprogrammer/job.h
-
-/Users/lorneez/CLionProjects/dailyprogrammer/main.cpp
-smorse.h
-/Users/lorneez/CLionProjects/dailyprogrammer/smorse.h
-decode.h
-/Users/lorneez/CLionProjects/dailyprogrammer/decode.h
-filecalculator.h
-/Users/lorneez/CLionProjects/dailyprogrammer/filecalculator.h
-mandelbrot.h
-/Users/lorneez/CLionProjects/dailyprogrammer/mandelbrot.h
-fibjob.h
-/Users/lorneez/CLionProjects/dailyprogrammer/fibjob.h
-
-/Users/lorneez/CLionProjects/dailyprogrammer/mandelbrot.h
-
-/Users/lorneez/CLionProjects/dailyprogrammer/smorse.h
-string
--
-map
--
 

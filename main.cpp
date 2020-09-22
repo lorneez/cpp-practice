@@ -3,7 +3,11 @@
 #include "filecalculator.h"
 #include "mandelbrot.h"
 #include "fibjob.h"
+#include "imageconverter.h"
 
+/**
+ * Test for decode smorse
+ */
 void RunDecode() {
     Smorse s("lorne");
     s.ShowText();
@@ -11,6 +15,9 @@ void RunDecode() {
     d.ShowText();
 }
 
+/**
+ * Test for file calculator
+ */
 void RunFileCalculator() {
     FileCalculator f;
 
@@ -20,17 +27,23 @@ void RunFileCalculator() {
     // f.CalculateUsingThreadLoop("/Users/lorneez/");
     // 16485208216 Bytes!
 
-    f.CalculateUsingMultiThreading("/Users/lorneez/");
+    // f.CalculateUsingMultiThreading("/Users/lorneez/");
     // 29587857974 Bytes!
 
     f.Show();
 }
 
+/**
+ * Test for mandelbrot
+ */
 void RunMandelbrot() {
     Mandelbrot m(100, 100);
     m.Display();
 }
 
+/**
+ * Test for thread pool
+ */
 void RunFibThreadPool() {
     FibJob f(1);
     for(int i=1; i<20; i++) {
@@ -38,10 +51,19 @@ void RunFibThreadPool() {
     }
 }
 
+/**
+ * Test for image converter
+ */
+void RunImageConverted() {
+    ImageConverter i("../Cyan.png", "../test.txt");
+    i.run();
+}
+
 int main() {
     // RunDecode();
     // RunMandelbrot();
     // RunFileCalculator();
-    RunFibThreadPool();
+    // RunFibThreadPool();
+    RunImageConverted();
     return 0;
 }
