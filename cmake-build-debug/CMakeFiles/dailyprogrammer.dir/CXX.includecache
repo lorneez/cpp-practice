@@ -6,12 +6,36 @@
 
 #IncludeRegexTransform: 
 
+/Users/lorneez/CLionProjects/dailyprogrammer/decode.h
+string
+-
+list
+-
+map
+-
+
+/Users/lorneez/CLionProjects/dailyprogrammer/fibjob.h
+job.h
+/Users/lorneez/CLionProjects/dailyprogrammer/job.h
+
+/Users/lorneez/CLionProjects/dailyprogrammer/filecalculator.h
+string
+-
+list
+-
+mutex
+-
+
 /Users/lorneez/CLionProjects/dailyprogrammer/imageconverter.cpp
 imageconverter.h
 /Users/lorneez/CLionProjects/dailyprogrammer/imageconverter.h
 job.h
 /Users/lorneez/CLionProjects/dailyprogrammer/job.h
 iostream
+-
+vector
+-
+cmath
 -
 
 /Users/lorneez/CLionProjects/dailyprogrammer/imageconverter.h
@@ -23,4 +47,26 @@ fstream
 -
 
 /Users/lorneez/CLionProjects/dailyprogrammer/job.h
+
+/Users/lorneez/CLionProjects/dailyprogrammer/main.cpp
+smorse.h
+/Users/lorneez/CLionProjects/dailyprogrammer/smorse.h
+decode.h
+/Users/lorneez/CLionProjects/dailyprogrammer/decode.h
+filecalculator.h
+/Users/lorneez/CLionProjects/dailyprogrammer/filecalculator.h
+mandelbrot.h
+/Users/lorneez/CLionProjects/dailyprogrammer/mandelbrot.h
+fibjob.h
+/Users/lorneez/CLionProjects/dailyprogrammer/fibjob.h
+imageconverter.h
+/Users/lorneez/CLionProjects/dailyprogrammer/imageconverter.h
+
+/Users/lorneez/CLionProjects/dailyprogrammer/mandelbrot.h
+
+/Users/lorneez/CLionProjects/dailyprogrammer/smorse.h
+string
+-
+map
+-
 
