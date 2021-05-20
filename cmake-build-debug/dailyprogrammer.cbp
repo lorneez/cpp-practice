@@ -37,8 +37,8 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/lorneez/CLionProjects/dailyprogrammer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="dailyprogrammer">
-				<Option output="/Users/lorneez/CLionProjects/dailyprogrammer/cmake-build-debug/dailyprogrammer" prefix_auto="0" extension_auto="0"/>
+			<Target title="cpp_code">
+				<Option output="/Users/lorneez/CLionProjects/dailyprogrammer/cmake-build-debug/cpp_code" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/lorneez/CLionProjects/dailyprogrammer/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -52,14 +52,14 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/lorneez/CLionProjects/dailyprogrammer/cmake-build-debug/Makefile&quot;  VERBOSE=1 dailyprogrammer"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/lorneez/CLionProjects/dailyprogrammer/cmake-build-debug/Makefile&quot;  VERBOSE=1 cpp_code"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/lorneez/CLionProjects/dailyprogrammer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/Users/lorneez/CLionProjects/dailyprogrammer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/lorneez/CLionProjects/dailyprogrammer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="dailyprogrammer/fast">
-				<Option output="/Users/lorneez/CLionProjects/dailyprogrammer/cmake-build-debug/dailyprogrammer" prefix_auto="0" extension_auto="0"/>
+			<Target title="cpp_code/fast">
+				<Option output="/Users/lorneez/CLionProjects/dailyprogrammer/cmake-build-debug/cpp_code" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/lorneez/CLionProjects/dailyprogrammer/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -73,69 +73,105 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/lorneez/CLionProjects/dailyprogrammer/cmake-build-debug/Makefile&quot;  VERBOSE=1 dailyprogrammer/fast"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/lorneez/CLionProjects/dailyprogrammer/cmake-build-debug/Makefile&quot;  VERBOSE=1 cpp_code/fast"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/lorneez/CLionProjects/dailyprogrammer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/Users/lorneez/CLionProjects/dailyprogrammer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/lorneez/CLionProjects/dailyprogrammer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/lorneez/CLionProjects/dailyprogrammer/decode.cpp">
-			<Option target="dailyprogrammer"/>
+		<Unit filename="/Users/lorneez/CLionProjects/dailyprogrammer/FileCalculator/filecalculator.cpp">
+			<Option target="cpp_code"/>
 		</Unit>
-		<Unit filename="/Users/lorneez/CLionProjects/dailyprogrammer/decode.h">
-			<Option target="dailyprogrammer"/>
+		<Unit filename="/Users/lorneez/CLionProjects/dailyprogrammer/FileCalculator/filecalculator.h">
+			<Option target="cpp_code"/>
 		</Unit>
-		<Unit filename="/Users/lorneez/CLionProjects/dailyprogrammer/fibjob.cpp">
-			<Option target="dailyprogrammer"/>
+		<Unit filename="/Users/lorneez/CLionProjects/dailyprogrammer/ImageConverter/imageconverter.cpp">
+			<Option target="cpp_code"/>
 		</Unit>
-		<Unit filename="/Users/lorneez/CLionProjects/dailyprogrammer/fibjob.h">
-			<Option target="dailyprogrammer"/>
+		<Unit filename="/Users/lorneez/CLionProjects/dailyprogrammer/ImageConverter/imageconverter.h">
+			<Option target="cpp_code"/>
 		</Unit>
-		<Unit filename="/Users/lorneez/CLionProjects/dailyprogrammer/filecalculator.cpp">
-			<Option target="dailyprogrammer"/>
+		<Unit filename="/Users/lorneez/CLionProjects/dailyprogrammer/Mandelbrot/mandelbrot.cpp">
+			<Option target="cpp_code"/>
 		</Unit>
-		<Unit filename="/Users/lorneez/CLionProjects/dailyprogrammer/filecalculator.h">
-			<Option target="dailyprogrammer"/>
+		<Unit filename="/Users/lorneez/CLionProjects/dailyprogrammer/Mandelbrot/mandelbrot.h">
+			<Option target="cpp_code"/>
 		</Unit>
-		<Unit filename="/Users/lorneez/CLionProjects/dailyprogrammer/imageconverter.cpp">
-			<Option target="dailyprogrammer"/>
+		<Unit filename="/Users/lorneez/CLionProjects/dailyprogrammer/Morse/decode.cpp">
+			<Option target="cpp_code"/>
 		</Unit>
-		<Unit filename="/Users/lorneez/CLionProjects/dailyprogrammer/imageconverter.h">
-			<Option target="dailyprogrammer"/>
+		<Unit filename="/Users/lorneez/CLionProjects/dailyprogrammer/Morse/decode.h">
+			<Option target="cpp_code"/>
 		</Unit>
-		<Unit filename="/Users/lorneez/CLionProjects/dailyprogrammer/job.cpp">
-			<Option target="dailyprogrammer"/>
+		<Unit filename="/Users/lorneez/CLionProjects/dailyprogrammer/Morse/smorse.cpp">
+			<Option target="cpp_code"/>
 		</Unit>
-		<Unit filename="/Users/lorneez/CLionProjects/dailyprogrammer/job.h">
-			<Option target="dailyprogrammer"/>
+		<Unit filename="/Users/lorneez/CLionProjects/dailyprogrammer/Morse/smorse.h">
+			<Option target="cpp_code"/>
 		</Unit>
-		<Unit filename="/Users/lorneez/CLionProjects/dailyprogrammer/jobqueue.cpp">
-			<Option target="dailyprogrammer"/>
+		<Unit filename="/Users/lorneez/CLionProjects/dailyprogrammer/MultiThreading/fibjob.cpp">
+			<Option target="cpp_code"/>
 		</Unit>
-		<Unit filename="/Users/lorneez/CLionProjects/dailyprogrammer/jobqueue.h">
-			<Option target="dailyprogrammer"/>
+		<Unit filename="/Users/lorneez/CLionProjects/dailyprogrammer/MultiThreading/fibjob.h">
+			<Option target="cpp_code"/>
+		</Unit>
+		<Unit filename="/Users/lorneez/CLionProjects/dailyprogrammer/MultiThreading/job.cpp">
+			<Option target="cpp_code"/>
+		</Unit>
+		<Unit filename="/Users/lorneez/CLionProjects/dailyprogrammer/MultiThreading/job.h">
+			<Option target="cpp_code"/>
+		</Unit>
+		<Unit filename="/Users/lorneez/CLionProjects/dailyprogrammer/MultiThreading/jobqueue.cpp">
+			<Option target="cpp_code"/>
+		</Unit>
+		<Unit filename="/Users/lorneez/CLionProjects/dailyprogrammer/MultiThreading/jobqueue.h">
+			<Option target="cpp_code"/>
+		</Unit>
+		<Unit filename="/Users/lorneez/CLionProjects/dailyprogrammer/MultiThreading/threadpool.cpp">
+			<Option target="cpp_code"/>
+		</Unit>
+		<Unit filename="/Users/lorneez/CLionProjects/dailyprogrammer/MultiThreading/threadpool.h">
+			<Option target="cpp_code"/>
+		</Unit>
+		<Unit filename="/Users/lorneez/CLionProjects/dailyprogrammer/Project1/Matrix2D.cpp">
+			<Option target="cpp_code"/>
+		</Unit>
+		<Unit filename="/Users/lorneez/CLionProjects/dailyprogrammer/Project1/Matrix2D.h">
+			<Option target="cpp_code"/>
+		</Unit>
+		<Unit filename="/Users/lorneez/CLionProjects/dailyprogrammer/Project1/PrimeSum.cpp">
+			<Option target="cpp_code"/>
+		</Unit>
+		<Unit filename="/Users/lorneez/CLionProjects/dailyprogrammer/Project1/PrimeSum.h">
+			<Option target="cpp_code"/>
+		</Unit>
+		<Unit filename="/Users/lorneez/CLionProjects/dailyprogrammer/Project2/hashmap/HashMapGame.cpp">
+			<Option target="cpp_code"/>
+		</Unit>
+		<Unit filename="/Users/lorneez/CLionProjects/dailyprogrammer/Project2/hashmap/HashMapGame.h">
+			<Option target="cpp_code"/>
+		</Unit>
+		<Unit filename="/Users/lorneez/CLionProjects/dailyprogrammer/Project2/hashset/HashSetGame.cpp">
+			<Option target="cpp_code"/>
+		</Unit>
+		<Unit filename="/Users/lorneez/CLionProjects/dailyprogrammer/Project2/hashset/HashSetGame.h">
+			<Option target="cpp_code"/>
+		</Unit>
+		<Unit filename="/Users/lorneez/CLionProjects/dailyprogrammer/Project2/template/LinkedList.h">
+			<Option target="cpp_code"/>
+		</Unit>
+		<Unit filename="/Users/lorneez/CLionProjects/dailyprogrammer/Project2/template/ListNode.h">
+			<Option target="cpp_code"/>
+		</Unit>
+		<Unit filename="/Users/lorneez/CLionProjects/dailyprogrammer/Project2/vector/MatrixVector.cpp">
+			<Option target="cpp_code"/>
+		</Unit>
+		<Unit filename="/Users/lorneez/CLionProjects/dailyprogrammer/Project2/vector/MatrixVector.h">
+			<Option target="cpp_code"/>
 		</Unit>
 		<Unit filename="/Users/lorneez/CLionProjects/dailyprogrammer/main.cpp">
-			<Option target="dailyprogrammer"/>
-		</Unit>
-		<Unit filename="/Users/lorneez/CLionProjects/dailyprogrammer/mandelbrot.cpp">
-			<Option target="dailyprogrammer"/>
-		</Unit>
-		<Unit filename="/Users/lorneez/CLionProjects/dailyprogrammer/mandelbrot.h">
-			<Option target="dailyprogrammer"/>
-		</Unit>
-		<Unit filename="/Users/lorneez/CLionProjects/dailyprogrammer/smorse.cpp">
-			<Option target="dailyprogrammer"/>
-		</Unit>
-		<Unit filename="/Users/lorneez/CLionProjects/dailyprogrammer/smorse.h">
-			<Option target="dailyprogrammer"/>
-		</Unit>
-		<Unit filename="/Users/lorneez/CLionProjects/dailyprogrammer/threadpool.cpp">
-			<Option target="dailyprogrammer"/>
-		</Unit>
-		<Unit filename="/Users/lorneez/CLionProjects/dailyprogrammer/threadpool.h">
-			<Option target="dailyprogrammer"/>
+			<Option target="cpp_code"/>
 		</Unit>
 		<Unit filename="/Users/lorneez/CLionProjects/dailyprogrammer/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

@@ -131,179 +131,395 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named dailyprogrammer
+# Target rules for targets named cpp_code
 
 # Build rule for target.
-dailyprogrammer: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dailyprogrammer
-.PHONY : dailyprogrammer
+cpp_code: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cpp_code
+.PHONY : cpp_code
 
 # fast build rule for target.
-dailyprogrammer/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dailyprogrammer.dir/build.make CMakeFiles/dailyprogrammer.dir/build
-.PHONY : dailyprogrammer/fast
+cpp_code/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_code.dir/build.make CMakeFiles/cpp_code.dir/build
+.PHONY : cpp_code/fast
 
-decode.o: decode.cpp.o
+FileCalculator/filecalculator.o: FileCalculator/filecalculator.cpp.o
 
-.PHONY : decode.o
-
-# target to build an object file
-decode.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dailyprogrammer.dir/build.make CMakeFiles/dailyprogrammer.dir/decode.cpp.o
-.PHONY : decode.cpp.o
-
-decode.i: decode.cpp.i
-
-.PHONY : decode.i
-
-# target to preprocess a source file
-decode.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dailyprogrammer.dir/build.make CMakeFiles/dailyprogrammer.dir/decode.cpp.i
-.PHONY : decode.cpp.i
-
-decode.s: decode.cpp.s
-
-.PHONY : decode.s
-
-# target to generate assembly for a file
-decode.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dailyprogrammer.dir/build.make CMakeFiles/dailyprogrammer.dir/decode.cpp.s
-.PHONY : decode.cpp.s
-
-fibjob.o: fibjob.cpp.o
-
-.PHONY : fibjob.o
+.PHONY : FileCalculator/filecalculator.o
 
 # target to build an object file
-fibjob.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dailyprogrammer.dir/build.make CMakeFiles/dailyprogrammer.dir/fibjob.cpp.o
-.PHONY : fibjob.cpp.o
+FileCalculator/filecalculator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_code.dir/build.make CMakeFiles/cpp_code.dir/FileCalculator/filecalculator.cpp.o
+.PHONY : FileCalculator/filecalculator.cpp.o
 
-fibjob.i: fibjob.cpp.i
+FileCalculator/filecalculator.i: FileCalculator/filecalculator.cpp.i
 
-.PHONY : fibjob.i
+.PHONY : FileCalculator/filecalculator.i
 
 # target to preprocess a source file
-fibjob.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dailyprogrammer.dir/build.make CMakeFiles/dailyprogrammer.dir/fibjob.cpp.i
-.PHONY : fibjob.cpp.i
+FileCalculator/filecalculator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_code.dir/build.make CMakeFiles/cpp_code.dir/FileCalculator/filecalculator.cpp.i
+.PHONY : FileCalculator/filecalculator.cpp.i
 
-fibjob.s: fibjob.cpp.s
+FileCalculator/filecalculator.s: FileCalculator/filecalculator.cpp.s
 
-.PHONY : fibjob.s
+.PHONY : FileCalculator/filecalculator.s
 
 # target to generate assembly for a file
-fibjob.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dailyprogrammer.dir/build.make CMakeFiles/dailyprogrammer.dir/fibjob.cpp.s
-.PHONY : fibjob.cpp.s
+FileCalculator/filecalculator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_code.dir/build.make CMakeFiles/cpp_code.dir/FileCalculator/filecalculator.cpp.s
+.PHONY : FileCalculator/filecalculator.cpp.s
 
-filecalculator.o: filecalculator.cpp.o
+ImageConverter/imageconverter.o: ImageConverter/imageconverter.cpp.o
 
-.PHONY : filecalculator.o
+.PHONY : ImageConverter/imageconverter.o
 
 # target to build an object file
-filecalculator.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dailyprogrammer.dir/build.make CMakeFiles/dailyprogrammer.dir/filecalculator.cpp.o
-.PHONY : filecalculator.cpp.o
+ImageConverter/imageconverter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_code.dir/build.make CMakeFiles/cpp_code.dir/ImageConverter/imageconverter.cpp.o
+.PHONY : ImageConverter/imageconverter.cpp.o
 
-filecalculator.i: filecalculator.cpp.i
+ImageConverter/imageconverter.i: ImageConverter/imageconverter.cpp.i
 
-.PHONY : filecalculator.i
+.PHONY : ImageConverter/imageconverter.i
 
 # target to preprocess a source file
-filecalculator.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dailyprogrammer.dir/build.make CMakeFiles/dailyprogrammer.dir/filecalculator.cpp.i
-.PHONY : filecalculator.cpp.i
+ImageConverter/imageconverter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_code.dir/build.make CMakeFiles/cpp_code.dir/ImageConverter/imageconverter.cpp.i
+.PHONY : ImageConverter/imageconverter.cpp.i
 
-filecalculator.s: filecalculator.cpp.s
+ImageConverter/imageconverter.s: ImageConverter/imageconverter.cpp.s
 
-.PHONY : filecalculator.s
+.PHONY : ImageConverter/imageconverter.s
 
 # target to generate assembly for a file
-filecalculator.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dailyprogrammer.dir/build.make CMakeFiles/dailyprogrammer.dir/filecalculator.cpp.s
-.PHONY : filecalculator.cpp.s
+ImageConverter/imageconverter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_code.dir/build.make CMakeFiles/cpp_code.dir/ImageConverter/imageconverter.cpp.s
+.PHONY : ImageConverter/imageconverter.cpp.s
 
-imageconverter.o: imageconverter.cpp.o
+Mandelbrot/mandelbrot.o: Mandelbrot/mandelbrot.cpp.o
 
-.PHONY : imageconverter.o
+.PHONY : Mandelbrot/mandelbrot.o
 
 # target to build an object file
-imageconverter.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dailyprogrammer.dir/build.make CMakeFiles/dailyprogrammer.dir/imageconverter.cpp.o
-.PHONY : imageconverter.cpp.o
+Mandelbrot/mandelbrot.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_code.dir/build.make CMakeFiles/cpp_code.dir/Mandelbrot/mandelbrot.cpp.o
+.PHONY : Mandelbrot/mandelbrot.cpp.o
 
-imageconverter.i: imageconverter.cpp.i
+Mandelbrot/mandelbrot.i: Mandelbrot/mandelbrot.cpp.i
 
-.PHONY : imageconverter.i
+.PHONY : Mandelbrot/mandelbrot.i
 
 # target to preprocess a source file
-imageconverter.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dailyprogrammer.dir/build.make CMakeFiles/dailyprogrammer.dir/imageconverter.cpp.i
-.PHONY : imageconverter.cpp.i
+Mandelbrot/mandelbrot.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_code.dir/build.make CMakeFiles/cpp_code.dir/Mandelbrot/mandelbrot.cpp.i
+.PHONY : Mandelbrot/mandelbrot.cpp.i
 
-imageconverter.s: imageconverter.cpp.s
+Mandelbrot/mandelbrot.s: Mandelbrot/mandelbrot.cpp.s
 
-.PHONY : imageconverter.s
+.PHONY : Mandelbrot/mandelbrot.s
 
 # target to generate assembly for a file
-imageconverter.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dailyprogrammer.dir/build.make CMakeFiles/dailyprogrammer.dir/imageconverter.cpp.s
-.PHONY : imageconverter.cpp.s
+Mandelbrot/mandelbrot.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_code.dir/build.make CMakeFiles/cpp_code.dir/Mandelbrot/mandelbrot.cpp.s
+.PHONY : Mandelbrot/mandelbrot.cpp.s
 
-job.o: job.cpp.o
+Morse/decode.o: Morse/decode.cpp.o
 
-.PHONY : job.o
+.PHONY : Morse/decode.o
 
 # target to build an object file
-job.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dailyprogrammer.dir/build.make CMakeFiles/dailyprogrammer.dir/job.cpp.o
-.PHONY : job.cpp.o
+Morse/decode.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_code.dir/build.make CMakeFiles/cpp_code.dir/Morse/decode.cpp.o
+.PHONY : Morse/decode.cpp.o
 
-job.i: job.cpp.i
+Morse/decode.i: Morse/decode.cpp.i
 
-.PHONY : job.i
+.PHONY : Morse/decode.i
 
 # target to preprocess a source file
-job.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dailyprogrammer.dir/build.make CMakeFiles/dailyprogrammer.dir/job.cpp.i
-.PHONY : job.cpp.i
+Morse/decode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_code.dir/build.make CMakeFiles/cpp_code.dir/Morse/decode.cpp.i
+.PHONY : Morse/decode.cpp.i
 
-job.s: job.cpp.s
+Morse/decode.s: Morse/decode.cpp.s
 
-.PHONY : job.s
+.PHONY : Morse/decode.s
 
 # target to generate assembly for a file
-job.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dailyprogrammer.dir/build.make CMakeFiles/dailyprogrammer.dir/job.cpp.s
-.PHONY : job.cpp.s
+Morse/decode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_code.dir/build.make CMakeFiles/cpp_code.dir/Morse/decode.cpp.s
+.PHONY : Morse/decode.cpp.s
 
-jobqueue.o: jobqueue.cpp.o
+Morse/smorse.o: Morse/smorse.cpp.o
 
-.PHONY : jobqueue.o
+.PHONY : Morse/smorse.o
 
 # target to build an object file
-jobqueue.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dailyprogrammer.dir/build.make CMakeFiles/dailyprogrammer.dir/jobqueue.cpp.o
-.PHONY : jobqueue.cpp.o
+Morse/smorse.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_code.dir/build.make CMakeFiles/cpp_code.dir/Morse/smorse.cpp.o
+.PHONY : Morse/smorse.cpp.o
 
-jobqueue.i: jobqueue.cpp.i
+Morse/smorse.i: Morse/smorse.cpp.i
 
-.PHONY : jobqueue.i
+.PHONY : Morse/smorse.i
 
 # target to preprocess a source file
-jobqueue.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dailyprogrammer.dir/build.make CMakeFiles/dailyprogrammer.dir/jobqueue.cpp.i
-.PHONY : jobqueue.cpp.i
+Morse/smorse.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_code.dir/build.make CMakeFiles/cpp_code.dir/Morse/smorse.cpp.i
+.PHONY : Morse/smorse.cpp.i
 
-jobqueue.s: jobqueue.cpp.s
+Morse/smorse.s: Morse/smorse.cpp.s
 
-.PHONY : jobqueue.s
+.PHONY : Morse/smorse.s
 
 # target to generate assembly for a file
-jobqueue.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dailyprogrammer.dir/build.make CMakeFiles/dailyprogrammer.dir/jobqueue.cpp.s
-.PHONY : jobqueue.cpp.s
+Morse/smorse.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_code.dir/build.make CMakeFiles/cpp_code.dir/Morse/smorse.cpp.s
+.PHONY : Morse/smorse.cpp.s
+
+MultiThreading/fibjob.o: MultiThreading/fibjob.cpp.o
+
+.PHONY : MultiThreading/fibjob.o
+
+# target to build an object file
+MultiThreading/fibjob.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_code.dir/build.make CMakeFiles/cpp_code.dir/MultiThreading/fibjob.cpp.o
+.PHONY : MultiThreading/fibjob.cpp.o
+
+MultiThreading/fibjob.i: MultiThreading/fibjob.cpp.i
+
+.PHONY : MultiThreading/fibjob.i
+
+# target to preprocess a source file
+MultiThreading/fibjob.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_code.dir/build.make CMakeFiles/cpp_code.dir/MultiThreading/fibjob.cpp.i
+.PHONY : MultiThreading/fibjob.cpp.i
+
+MultiThreading/fibjob.s: MultiThreading/fibjob.cpp.s
+
+.PHONY : MultiThreading/fibjob.s
+
+# target to generate assembly for a file
+MultiThreading/fibjob.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_code.dir/build.make CMakeFiles/cpp_code.dir/MultiThreading/fibjob.cpp.s
+.PHONY : MultiThreading/fibjob.cpp.s
+
+MultiThreading/job.o: MultiThreading/job.cpp.o
+
+.PHONY : MultiThreading/job.o
+
+# target to build an object file
+MultiThreading/job.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_code.dir/build.make CMakeFiles/cpp_code.dir/MultiThreading/job.cpp.o
+.PHONY : MultiThreading/job.cpp.o
+
+MultiThreading/job.i: MultiThreading/job.cpp.i
+
+.PHONY : MultiThreading/job.i
+
+# target to preprocess a source file
+MultiThreading/job.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_code.dir/build.make CMakeFiles/cpp_code.dir/MultiThreading/job.cpp.i
+.PHONY : MultiThreading/job.cpp.i
+
+MultiThreading/job.s: MultiThreading/job.cpp.s
+
+.PHONY : MultiThreading/job.s
+
+# target to generate assembly for a file
+MultiThreading/job.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_code.dir/build.make CMakeFiles/cpp_code.dir/MultiThreading/job.cpp.s
+.PHONY : MultiThreading/job.cpp.s
+
+MultiThreading/jobqueue.o: MultiThreading/jobqueue.cpp.o
+
+.PHONY : MultiThreading/jobqueue.o
+
+# target to build an object file
+MultiThreading/jobqueue.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_code.dir/build.make CMakeFiles/cpp_code.dir/MultiThreading/jobqueue.cpp.o
+.PHONY : MultiThreading/jobqueue.cpp.o
+
+MultiThreading/jobqueue.i: MultiThreading/jobqueue.cpp.i
+
+.PHONY : MultiThreading/jobqueue.i
+
+# target to preprocess a source file
+MultiThreading/jobqueue.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_code.dir/build.make CMakeFiles/cpp_code.dir/MultiThreading/jobqueue.cpp.i
+.PHONY : MultiThreading/jobqueue.cpp.i
+
+MultiThreading/jobqueue.s: MultiThreading/jobqueue.cpp.s
+
+.PHONY : MultiThreading/jobqueue.s
+
+# target to generate assembly for a file
+MultiThreading/jobqueue.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_code.dir/build.make CMakeFiles/cpp_code.dir/MultiThreading/jobqueue.cpp.s
+.PHONY : MultiThreading/jobqueue.cpp.s
+
+MultiThreading/threadpool.o: MultiThreading/threadpool.cpp.o
+
+.PHONY : MultiThreading/threadpool.o
+
+# target to build an object file
+MultiThreading/threadpool.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_code.dir/build.make CMakeFiles/cpp_code.dir/MultiThreading/threadpool.cpp.o
+.PHONY : MultiThreading/threadpool.cpp.o
+
+MultiThreading/threadpool.i: MultiThreading/threadpool.cpp.i
+
+.PHONY : MultiThreading/threadpool.i
+
+# target to preprocess a source file
+MultiThreading/threadpool.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_code.dir/build.make CMakeFiles/cpp_code.dir/MultiThreading/threadpool.cpp.i
+.PHONY : MultiThreading/threadpool.cpp.i
+
+MultiThreading/threadpool.s: MultiThreading/threadpool.cpp.s
+
+.PHONY : MultiThreading/threadpool.s
+
+# target to generate assembly for a file
+MultiThreading/threadpool.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_code.dir/build.make CMakeFiles/cpp_code.dir/MultiThreading/threadpool.cpp.s
+.PHONY : MultiThreading/threadpool.cpp.s
+
+Project1/Matrix2D.o: Project1/Matrix2D.cpp.o
+
+.PHONY : Project1/Matrix2D.o
+
+# target to build an object file
+Project1/Matrix2D.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_code.dir/build.make CMakeFiles/cpp_code.dir/Project1/Matrix2D.cpp.o
+.PHONY : Project1/Matrix2D.cpp.o
+
+Project1/Matrix2D.i: Project1/Matrix2D.cpp.i
+
+.PHONY : Project1/Matrix2D.i
+
+# target to preprocess a source file
+Project1/Matrix2D.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_code.dir/build.make CMakeFiles/cpp_code.dir/Project1/Matrix2D.cpp.i
+.PHONY : Project1/Matrix2D.cpp.i
+
+Project1/Matrix2D.s: Project1/Matrix2D.cpp.s
+
+.PHONY : Project1/Matrix2D.s
+
+# target to generate assembly for a file
+Project1/Matrix2D.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_code.dir/build.make CMakeFiles/cpp_code.dir/Project1/Matrix2D.cpp.s
+.PHONY : Project1/Matrix2D.cpp.s
+
+Project1/PrimeSum.o: Project1/PrimeSum.cpp.o
+
+.PHONY : Project1/PrimeSum.o
+
+# target to build an object file
+Project1/PrimeSum.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_code.dir/build.make CMakeFiles/cpp_code.dir/Project1/PrimeSum.cpp.o
+.PHONY : Project1/PrimeSum.cpp.o
+
+Project1/PrimeSum.i: Project1/PrimeSum.cpp.i
+
+.PHONY : Project1/PrimeSum.i
+
+# target to preprocess a source file
+Project1/PrimeSum.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_code.dir/build.make CMakeFiles/cpp_code.dir/Project1/PrimeSum.cpp.i
+.PHONY : Project1/PrimeSum.cpp.i
+
+Project1/PrimeSum.s: Project1/PrimeSum.cpp.s
+
+.PHONY : Project1/PrimeSum.s
+
+# target to generate assembly for a file
+Project1/PrimeSum.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_code.dir/build.make CMakeFiles/cpp_code.dir/Project1/PrimeSum.cpp.s
+.PHONY : Project1/PrimeSum.cpp.s
+
+Project2/hashmap/HashMapGame.o: Project2/hashmap/HashMapGame.cpp.o
+
+.PHONY : Project2/hashmap/HashMapGame.o
+
+# target to build an object file
+Project2/hashmap/HashMapGame.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_code.dir/build.make CMakeFiles/cpp_code.dir/Project2/hashmap/HashMapGame.cpp.o
+.PHONY : Project2/hashmap/HashMapGame.cpp.o
+
+Project2/hashmap/HashMapGame.i: Project2/hashmap/HashMapGame.cpp.i
+
+.PHONY : Project2/hashmap/HashMapGame.i
+
+# target to preprocess a source file
+Project2/hashmap/HashMapGame.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_code.dir/build.make CMakeFiles/cpp_code.dir/Project2/hashmap/HashMapGame.cpp.i
+.PHONY : Project2/hashmap/HashMapGame.cpp.i
+
+Project2/hashmap/HashMapGame.s: Project2/hashmap/HashMapGame.cpp.s
+
+.PHONY : Project2/hashmap/HashMapGame.s
+
+# target to generate assembly for a file
+Project2/hashmap/HashMapGame.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_code.dir/build.make CMakeFiles/cpp_code.dir/Project2/hashmap/HashMapGame.cpp.s
+.PHONY : Project2/hashmap/HashMapGame.cpp.s
+
+Project2/hashset/HashSetGame.o: Project2/hashset/HashSetGame.cpp.o
+
+.PHONY : Project2/hashset/HashSetGame.o
+
+# target to build an object file
+Project2/hashset/HashSetGame.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_code.dir/build.make CMakeFiles/cpp_code.dir/Project2/hashset/HashSetGame.cpp.o
+.PHONY : Project2/hashset/HashSetGame.cpp.o
+
+Project2/hashset/HashSetGame.i: Project2/hashset/HashSetGame.cpp.i
+
+.PHONY : Project2/hashset/HashSetGame.i
+
+# target to preprocess a source file
+Project2/hashset/HashSetGame.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_code.dir/build.make CMakeFiles/cpp_code.dir/Project2/hashset/HashSetGame.cpp.i
+.PHONY : Project2/hashset/HashSetGame.cpp.i
+
+Project2/hashset/HashSetGame.s: Project2/hashset/HashSetGame.cpp.s
+
+.PHONY : Project2/hashset/HashSetGame.s
+
+# target to generate assembly for a file
+Project2/hashset/HashSetGame.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_code.dir/build.make CMakeFiles/cpp_code.dir/Project2/hashset/HashSetGame.cpp.s
+.PHONY : Project2/hashset/HashSetGame.cpp.s
+
+Project2/vector/MatrixVector.o: Project2/vector/MatrixVector.cpp.o
+
+.PHONY : Project2/vector/MatrixVector.o
+
+# target to build an object file
+Project2/vector/MatrixVector.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_code.dir/build.make CMakeFiles/cpp_code.dir/Project2/vector/MatrixVector.cpp.o
+.PHONY : Project2/vector/MatrixVector.cpp.o
+
+Project2/vector/MatrixVector.i: Project2/vector/MatrixVector.cpp.i
+
+.PHONY : Project2/vector/MatrixVector.i
+
+# target to preprocess a source file
+Project2/vector/MatrixVector.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_code.dir/build.make CMakeFiles/cpp_code.dir/Project2/vector/MatrixVector.cpp.i
+.PHONY : Project2/vector/MatrixVector.cpp.i
+
+Project2/vector/MatrixVector.s: Project2/vector/MatrixVector.cpp.s
+
+.PHONY : Project2/vector/MatrixVector.s
+
+# target to generate assembly for a file
+Project2/vector/MatrixVector.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_code.dir/build.make CMakeFiles/cpp_code.dir/Project2/vector/MatrixVector.cpp.s
+.PHONY : Project2/vector/MatrixVector.cpp.s
 
 main.o: main.cpp.o
 
@@ -311,7 +527,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dailyprogrammer.dir/build.make CMakeFiles/dailyprogrammer.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_code.dir/build.make CMakeFiles/cpp_code.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -320,7 +536,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dailyprogrammer.dir/build.make CMakeFiles/dailyprogrammer.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_code.dir/build.make CMakeFiles/cpp_code.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -329,89 +545,8 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dailyprogrammer.dir/build.make CMakeFiles/dailyprogrammer.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_code.dir/build.make CMakeFiles/cpp_code.dir/main.cpp.s
 .PHONY : main.cpp.s
-
-mandelbrot.o: mandelbrot.cpp.o
-
-.PHONY : mandelbrot.o
-
-# target to build an object file
-mandelbrot.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dailyprogrammer.dir/build.make CMakeFiles/dailyprogrammer.dir/mandelbrot.cpp.o
-.PHONY : mandelbrot.cpp.o
-
-mandelbrot.i: mandelbrot.cpp.i
-
-.PHONY : mandelbrot.i
-
-# target to preprocess a source file
-mandelbrot.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dailyprogrammer.dir/build.make CMakeFiles/dailyprogrammer.dir/mandelbrot.cpp.i
-.PHONY : mandelbrot.cpp.i
-
-mandelbrot.s: mandelbrot.cpp.s
-
-.PHONY : mandelbrot.s
-
-# target to generate assembly for a file
-mandelbrot.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dailyprogrammer.dir/build.make CMakeFiles/dailyprogrammer.dir/mandelbrot.cpp.s
-.PHONY : mandelbrot.cpp.s
-
-smorse.o: smorse.cpp.o
-
-.PHONY : smorse.o
-
-# target to build an object file
-smorse.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dailyprogrammer.dir/build.make CMakeFiles/dailyprogrammer.dir/smorse.cpp.o
-.PHONY : smorse.cpp.o
-
-smorse.i: smorse.cpp.i
-
-.PHONY : smorse.i
-
-# target to preprocess a source file
-smorse.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dailyprogrammer.dir/build.make CMakeFiles/dailyprogrammer.dir/smorse.cpp.i
-.PHONY : smorse.cpp.i
-
-smorse.s: smorse.cpp.s
-
-.PHONY : smorse.s
-
-# target to generate assembly for a file
-smorse.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dailyprogrammer.dir/build.make CMakeFiles/dailyprogrammer.dir/smorse.cpp.s
-.PHONY : smorse.cpp.s
-
-threadpool.o: threadpool.cpp.o
-
-.PHONY : threadpool.o
-
-# target to build an object file
-threadpool.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dailyprogrammer.dir/build.make CMakeFiles/dailyprogrammer.dir/threadpool.cpp.o
-.PHONY : threadpool.cpp.o
-
-threadpool.i: threadpool.cpp.i
-
-.PHONY : threadpool.i
-
-# target to preprocess a source file
-threadpool.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dailyprogrammer.dir/build.make CMakeFiles/dailyprogrammer.dir/threadpool.cpp.i
-.PHONY : threadpool.cpp.i
-
-threadpool.s: threadpool.cpp.s
-
-.PHONY : threadpool.s
-
-# target to generate assembly for a file
-threadpool.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dailyprogrammer.dir/build.make CMakeFiles/dailyprogrammer.dir/threadpool.cpp.s
-.PHONY : threadpool.cpp.s
 
 # Help Target
 help:
@@ -421,37 +556,52 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... dailyprogrammer"
-	@echo "... decode.o"
-	@echo "... decode.i"
-	@echo "... decode.s"
-	@echo "... fibjob.o"
-	@echo "... fibjob.i"
-	@echo "... fibjob.s"
-	@echo "... filecalculator.o"
-	@echo "... filecalculator.i"
-	@echo "... filecalculator.s"
-	@echo "... imageconverter.o"
-	@echo "... imageconverter.i"
-	@echo "... imageconverter.s"
-	@echo "... job.o"
-	@echo "... job.i"
-	@echo "... job.s"
-	@echo "... jobqueue.o"
-	@echo "... jobqueue.i"
-	@echo "... jobqueue.s"
+	@echo "... cpp_code"
+	@echo "... FileCalculator/filecalculator.o"
+	@echo "... FileCalculator/filecalculator.i"
+	@echo "... FileCalculator/filecalculator.s"
+	@echo "... ImageConverter/imageconverter.o"
+	@echo "... ImageConverter/imageconverter.i"
+	@echo "... ImageConverter/imageconverter.s"
+	@echo "... Mandelbrot/mandelbrot.o"
+	@echo "... Mandelbrot/mandelbrot.i"
+	@echo "... Mandelbrot/mandelbrot.s"
+	@echo "... Morse/decode.o"
+	@echo "... Morse/decode.i"
+	@echo "... Morse/decode.s"
+	@echo "... Morse/smorse.o"
+	@echo "... Morse/smorse.i"
+	@echo "... Morse/smorse.s"
+	@echo "... MultiThreading/fibjob.o"
+	@echo "... MultiThreading/fibjob.i"
+	@echo "... MultiThreading/fibjob.s"
+	@echo "... MultiThreading/job.o"
+	@echo "... MultiThreading/job.i"
+	@echo "... MultiThreading/job.s"
+	@echo "... MultiThreading/jobqueue.o"
+	@echo "... MultiThreading/jobqueue.i"
+	@echo "... MultiThreading/jobqueue.s"
+	@echo "... MultiThreading/threadpool.o"
+	@echo "... MultiThreading/threadpool.i"
+	@echo "... MultiThreading/threadpool.s"
+	@echo "... Project1/Matrix2D.o"
+	@echo "... Project1/Matrix2D.i"
+	@echo "... Project1/Matrix2D.s"
+	@echo "... Project1/PrimeSum.o"
+	@echo "... Project1/PrimeSum.i"
+	@echo "... Project1/PrimeSum.s"
+	@echo "... Project2/hashmap/HashMapGame.o"
+	@echo "... Project2/hashmap/HashMapGame.i"
+	@echo "... Project2/hashmap/HashMapGame.s"
+	@echo "... Project2/hashset/HashSetGame.o"
+	@echo "... Project2/hashset/HashSetGame.i"
+	@echo "... Project2/hashset/HashSetGame.s"
+	@echo "... Project2/vector/MatrixVector.o"
+	@echo "... Project2/vector/MatrixVector.i"
+	@echo "... Project2/vector/MatrixVector.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... mandelbrot.o"
-	@echo "... mandelbrot.i"
-	@echo "... mandelbrot.s"
-	@echo "... smorse.o"
-	@echo "... smorse.i"
-	@echo "... smorse.s"
-	@echo "... threadpool.o"
-	@echo "... threadpool.i"
-	@echo "... threadpool.s"
 .PHONY : help
 
 

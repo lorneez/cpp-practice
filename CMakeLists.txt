@@ -3,4 +3,4 @@ project(dailyprogrammer)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(dailyprogrammer main.cpp smorse.cpp smorse.h decode.cpp decode.h filecalculator.cpp filecalculator.h mandelbrot.cpp mandelbrot.h threadpool.cpp threadpool.h job.cpp job.h jobqueue.cpp jobqueue.h fibjob.cpp fibjob.h imageconverter.cpp imageconverter.h)
+add_executable(cpp_code main.cpp Morse/decode.cpp Morse/smorse.cpp MultiThreading/fibjob.cpp MultiThreading/job.cpp MultiThreading/jobqueue.cpp MultiThreading/threadpool.cpp Project1/PrimeSum.cpp Mandelbrot/mandelbrot.cpp ImageConverter/imageconverter.cpp FileCalculator/filecalculator.cpp Project1/Matrix2D.cpp Project1/Matrix2D.h Project2/vector/MatrixVector.cpp Project2/vector/MatrixVector.h Project2/template/ListNode.h Project2/template/LinkedList.h Project2/hashmap/HashMapGame.cpp Project2/hashmap/HashMapGame.h Project2/hashset/HashSetGame.cpp Project2/hashset/HashSetGame.h)

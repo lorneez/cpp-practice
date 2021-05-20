@@ -1,3 +1,3 @@
 /Users/lorneez/CLionProjects/dailyprogrammer/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 /Users/lorneez/CLionProjects/dailyprogrammer/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/lorneez/CLionProjects/dailyprogrammer/cmake-build-debug/CMakeFiles/dailyprogrammer.dir
+/Users/lorneez/CLionProjects/dailyprogrammer/cmake-build-debug/CMakeFiles/cpp_code.dir

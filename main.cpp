@@ -1,9 +1,18 @@
-#include "smorse.h"
-#include "decode.h"
-#include "filecalculator.h"
-#include "mandelbrot.h"
-#include "fibjob.h"
-#include "imageconverter.h"
+#include <fstream>
+
+#include "Morse/smorse.h"
+#include "Morse/decode.h"
+#include "FileCalculator/filecalculator.h"
+#include "Mandelbrot/mandelbrot.h"
+#include "MultiThreading/fibjob.h"
+#include "ImageConverter/imageconverter.h"
+#include "Project1/PrimeSum.h"
+#include "Project1/Matrix2D.h"
+#include "Project2/vector/MatrixVector.h"
+#include "Project2/template/LinkedList.h"
+#include "Project2/hashmap/HashMapGame.h"
+#include "Project2/hashset/HashSetGame.h"
+
 
 /**
  * Test for decode smorse
@@ -59,11 +68,122 @@ void RunImageConverted() {
     i.run();
 }
 
+/**
+ * Test for prime sum
+ */
+void RunPrimeSum() {
+    PrimeSum p(1000);
+    p.printPrimes();
+    p.printSum();
+}
+
+/**
+ * Test for matrix 2d
+ */
+void RunMatrix2D() {
+    Matrix2D a(600,600);
+    // a.print();
+    Matrix2D b(600,600);
+    // b.print();
+    Matrix2D c = a.multiply(b);
+    // c.print();
+}
+
+/**
+ * Test for matrix vector
+ */
+void RunVector() {
+    MatrixVector m(1,std::vector<int>{1});
+    m.test();
+}
+
+/**
+ * Test for matrix vector
+ */
+void RunListNode() {
+    LinkedList<int> integer_list;
+    for(int i=0; i<10; i++) {
+        integer_list.add(i);
+    }
+    integer_list.print();
+}
+
+/**
+ * Test for hash map game
+ */
+void RunHashMapGame() {
+    HashMapGame game;
+    game.run();
+}
+
+/**
+ * Test for hash set game
+ */
+void RunHashSetGame() {
+    HashSetGame game;
+    game.run();
+}
+
+/**
+ * Project 3
+ */
+template <typename Iterator>
+void ProcessIterator(Iterator begin, Iterator end, ostream& stream) {
+    while(begin != end) {
+        stream << *begin;
+        begin ++;
+    }
+
+}
+
+
+/**
+ * Test for iterator stream processor
+ */
+void RunIteratorStreamProcessor() {
+    // make three objects
+    std::vector<int> v{1,2,3};
+    std::unordered_set<int> s{4,5,6};
+//    std::map<int, int> m;
+//    m.insert(std::pair<int,int>(7,7));
+//    m.insert(std::pair<int,int>(8,8));
+//    m.insert(std::pair<int,int>(9,9));
+
+    // make file stream
+    std::ofstream f;
+    f.open(("iterator_stream_test.txt"));
+    f << "hi";
+    // process iterators with file stream
+    ProcessIterator(v.begin(), v.end(), f);
+    ProcessIterator(s.begin(), s.end(), f);
+    f.close();
+    // ProcessIterator(m.begin(), m.end(), f);
+
+    // process iterators with cout
+    ProcessIterator(v.begin(), v.end(), std::cout);
+    ProcessIterator(s.begin(), s.end(), std::cout);
+    // ProcessIterator(m.begin(), m.end(), std::cout);
+
+}
+
 int main() {
     // RunDecode();
     // RunMandelbrot();
     // RunFileCalculator();
     // RunFibThreadPool();
-    RunImageConverted();
+    // RunImageConverted();
+
+    // Project 1
+    // RunPrimeSum();
+    // RunMatrix2D();
+
+    // Project 2
+    // RunVector();
+    // RunListNode();
+    // RunHashMapGame();
+    //RunHashSetGame();
+
+    // Project 3
+    RunIteratorStreamProcessor();
     return 0;
 }

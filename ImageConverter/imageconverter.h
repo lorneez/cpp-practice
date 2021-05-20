@@ -7,7 +7,7 @@
 
 #define MAXIMAGESIZE 50
 #define MAXLENGTH 1000000
-#include "job.h"
+#include "../MultiThreading/job.h"
 #include <iostream>
 #include <fstream>
 

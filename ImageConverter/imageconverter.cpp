@@ -3,7 +3,7 @@
 //
 
 #include "imageconverter.h"
-#include "job.h"
+#include "../MultiThreading/job.h"
 #include <iostream>
 #include <vector>
 #include <cmath>
