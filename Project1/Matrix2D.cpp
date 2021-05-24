@@ -78,6 +78,6 @@ Matrix2D Matrix2D::multiply(Matrix2D m) {
         }
     }
     duration = ( std::clock() - start ) / (double) CLOCKS_PER_SEC;
-    std::cout<<"printf: "<< duration <<'\n';
+    printf("Duration: %f\n", duration);
     return m_multiplied;
 }

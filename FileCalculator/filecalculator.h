@@ -23,7 +23,7 @@ private:
     list<string> foldersToVisit;
     mutex mtx;
     atomic<int> MTCounter;
-    void MTAccessList();
+    void MTAccessList(int threadNum);
     void MTFindFoldersAndFiles(char *dir);
 };
 

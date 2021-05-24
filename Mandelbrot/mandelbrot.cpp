@@ -13,6 +13,11 @@ Mandelbrot::Mandelbrot(double width, double height) {
     this -> height = height;
 }
 
+/**
+ * This function maps an x coordinate to the real x coordinate in the image
+ * @param x
+ * @return
+ */
 double Mandelbrot::MapToReal(int x) {
     // 0-width -> minReal-maxReal
     double range = maxReal - minReal;
@@ -20,25 +25,36 @@ double Mandelbrot::MapToReal(int x) {
     // fraction * range -> 0-range
     // 0-range + minReal -> minReal-maxReal
     double fraction = x / width;
-    double zerorange = fraction * range;
-    double mapped = zerorange + minReal;
+    double zeroRange = fraction * range;
+    double mapped = zeroRange + minReal;
     return mapped;
 
 }
 
+/**
+ * This function maps a y coordinate to the imaginary y coordinate in the image
+ * @param y
+ * @return
+ */
 double Mandelbrot::MapToImaginary(int y) {
     double range = maxImaginary - minImaginary;
     double fraction = y / height;
-    double zerorange = fraction * range;
-    double mapped = zerorange + minImaginary;
+    double zeroRange = fraction * range;
+    double mapped = zeroRange + minImaginary;
     return mapped;
 }
 
+/**
+ * This obtains the iterations of a given (x,y) (real, imaginary) point to diverge or converge
+ * @param cr
+ * @param ci
+ * @return
+ */
 int Mandelbrot::CheckMandelbrot(double cr, double ci) {
     int iterations = 0;
     double zr = 0.0;
     double zi = 0.0;
-    while(iterations < maxIterations && zr * zr + zi * zi < 4.0) {
+    while(iterations < maxIterations && zr * zr + zi * zi < 4.0) { // 4 is diverge
         double temp = zr * zr - zi * zi + cr;
         zi = 2.0 * zr * zi + ci;
         zr = temp;

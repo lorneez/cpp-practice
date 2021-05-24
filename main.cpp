@@ -46,7 +46,7 @@ void RunFileCalculator() {
  * Test for mandelbrot
  */
 void RunMandelbrot() {
-    Mandelbrot m(100, 100);
+    Mandelbrot m(1000, 1000);
     m.Display();
 }
 
@@ -81,12 +81,12 @@ void RunPrimeSum() {
  * Test for matrix 2d
  */
 void RunMatrix2D() {
-    Matrix2D a(600,600);
-    // a.print();
-    Matrix2D b(600,600);
-    // b.print();
+    Matrix2D a(5,5);
+    a.print();
+    Matrix2D b(5,5);
+    b.print();
     Matrix2D c = a.multiply(b);
-    // c.print();
+    c.print();
 }
 
 /**
@@ -127,10 +127,21 @@ void RunHashSetGame() {
 /**
  * Project 3
  */
+
+
 template <typename Iterator>
 void ProcessIterator(Iterator begin, Iterator end, ostream& stream) {
     while(begin != end) {
         stream << *begin;
+        begin ++;
+    }
+
+}
+
+template <typename Iterator>
+void ProcessIteratorMap(Iterator begin, Iterator end, ostream& stream) {
+    while(begin != end) {
+        stream << begin->second;
         begin ++;
     }
 
@@ -144,25 +155,26 @@ void RunIteratorStreamProcessor() {
     // make three objects
     std::vector<int> v{1,2,3};
     std::unordered_set<int> s{4,5,6};
-//    std::map<int, int> m;
-//    m.insert(std::pair<int,int>(7,7));
-//    m.insert(std::pair<int,int>(8,8));
-//    m.insert(std::pair<int,int>(9,9));
+    std::map<int, int> m;
+    m.insert(std::pair<int,int>(7,7));
+    m.insert(std::pair<int,int>(8,8));
+    m.insert(std::pair<int,int>(9,9));
 
     // make file stream
     std::ofstream f;
     f.open(("iterator_stream_test.txt"));
     f << "hi";
+
     // process iterators with file stream
     ProcessIterator(v.begin(), v.end(), f);
     ProcessIterator(s.begin(), s.end(), f);
+    ProcessIteratorMap(m.begin(), m.end(), f);
     f.close();
-    // ProcessIterator(m.begin(), m.end(), f);
 
     // process iterators with cout
     ProcessIterator(v.begin(), v.end(), std::cout);
     ProcessIterator(s.begin(), s.end(), std::cout);
-    // ProcessIterator(m.begin(), m.end(), std::cout);
+    ProcessIteratorMap(m.begin(), m.end(), std::cout);
 
 }
 
@@ -181,9 +193,12 @@ int main() {
     // RunVector();
     // RunListNode();
     // RunHashMapGame();
-    //RunHashSetGame();
+    // RunHashSetGame();
 
     // Project 3
-    RunIteratorStreamProcessor();
+    // RunIteratorStreamProcessor();
+
+    // Project 4
+
     return 0;
 }
