@@ -13,6 +13,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/cpp_code.dir/Project2/hashmap/HashMapGame.cpp.o"
   "CMakeFiles/cpp_code.dir/Project2/hashset/HashSetGame.cpp.o"
   "CMakeFiles/cpp_code.dir/Project2/vector/MatrixVector.cpp.o"
+  "CMakeFiles/cpp_code.dir/Project4/ListFilesAndDirectories.cpp.o"
   "CMakeFiles/cpp_code.dir/main.cpp.o"
   "cpp_code"
   "cpp_code.pdb"

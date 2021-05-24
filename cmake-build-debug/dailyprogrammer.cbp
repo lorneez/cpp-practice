@@ -170,6 +170,12 @@
 		<Unit filename="/Users/lorneez/CLionProjects/dailyprogrammer/Project2/vector/MatrixVector.h">
 			<Option target="cpp_code"/>
 		</Unit>
+		<Unit filename="/Users/lorneez/CLionProjects/dailyprogrammer/Project4/ListFilesAndDirectories.cpp">
+			<Option target="cpp_code"/>
+		</Unit>
+		<Unit filename="/Users/lorneez/CLionProjects/dailyprogrammer/Project4/ListFilesAndDirectories.h">
+			<Option target="cpp_code"/>
+		</Unit>
 		<Unit filename="/Users/lorneez/CLionProjects/dailyprogrammer/main.cpp">
 			<Option target="cpp_code"/>
 		</Unit>

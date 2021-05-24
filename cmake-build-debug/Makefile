@@ -521,6 +521,33 @@ Project2/vector/MatrixVector.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_code.dir/build.make CMakeFiles/cpp_code.dir/Project2/vector/MatrixVector.cpp.s
 .PHONY : Project2/vector/MatrixVector.cpp.s
 
+Project4/ListFilesAndDirectories.o: Project4/ListFilesAndDirectories.cpp.o
+
+.PHONY : Project4/ListFilesAndDirectories.o
+
+# target to build an object file
+Project4/ListFilesAndDirectories.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_code.dir/build.make CMakeFiles/cpp_code.dir/Project4/ListFilesAndDirectories.cpp.o
+.PHONY : Project4/ListFilesAndDirectories.cpp.o
+
+Project4/ListFilesAndDirectories.i: Project4/ListFilesAndDirectories.cpp.i
+
+.PHONY : Project4/ListFilesAndDirectories.i
+
+# target to preprocess a source file
+Project4/ListFilesAndDirectories.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_code.dir/build.make CMakeFiles/cpp_code.dir/Project4/ListFilesAndDirectories.cpp.i
+.PHONY : Project4/ListFilesAndDirectories.cpp.i
+
+Project4/ListFilesAndDirectories.s: Project4/ListFilesAndDirectories.cpp.s
+
+.PHONY : Project4/ListFilesAndDirectories.s
+
+# target to generate assembly for a file
+Project4/ListFilesAndDirectories.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_code.dir/build.make CMakeFiles/cpp_code.dir/Project4/ListFilesAndDirectories.cpp.s
+.PHONY : Project4/ListFilesAndDirectories.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -599,6 +626,9 @@ help:
 	@echo "... Project2/vector/MatrixVector.o"
 	@echo "... Project2/vector/MatrixVector.i"
 	@echo "... Project2/vector/MatrixVector.s"
+	@echo "... Project4/ListFilesAndDirectories.o"
+	@echo "... Project4/ListFilesAndDirectories.i"
+	@echo "... Project4/ListFilesAndDirectories.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

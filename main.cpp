@@ -12,7 +12,7 @@
 #include "Project2/template/LinkedList.h"
 #include "Project2/hashmap/HashMapGame.h"
 #include "Project2/hashset/HashSetGame.h"
-
+#include "Project4/ListFilesAndDirectories.h"
 
 /**
  * Test for decode smorse
@@ -175,7 +175,14 @@ void RunIteratorStreamProcessor() {
     ProcessIterator(v.begin(), v.end(), std::cout);
     ProcessIterator(s.begin(), s.end(), std::cout);
     ProcessIteratorMap(m.begin(), m.end(), std::cout);
+}
 
+/**
+ * Project 4
+ */
+void RunLS() {
+    ListFilesAndDirectories a;
+    a.Show("/Users/lorneez");
 }
 
 int main() {
@@ -199,6 +206,7 @@ int main() {
     // RunIteratorStreamProcessor();
 
     // Project 4
+    RunLS();
 
     return 0;
 }

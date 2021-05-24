@@ -50,6 +50,9 @@ CMakeFiles/cpp_code.dir/Project2/hashset/HashSetGame.cpp.o
 CMakeFiles/cpp_code.dir/Project2/vector/MatrixVector.cpp.o
  /Users/lorneez/CLionProjects/dailyprogrammer/Project2/vector/MatrixVector.cpp
  /Users/lorneez/CLionProjects/dailyprogrammer/Project2/vector/MatrixVector.h
+CMakeFiles/cpp_code.dir/Project4/ListFilesAndDirectories.cpp.o
+ /Users/lorneez/CLionProjects/dailyprogrammer/Project4/ListFilesAndDirectories.cpp
+ /Users/lorneez/CLionProjects/dailyprogrammer/Project4/ListFilesAndDirectories.h
 CMakeFiles/cpp_code.dir/main.cpp.o
  /Users/lorneez/CLionProjects/dailyprogrammer/FileCalculator/filecalculator.h
  /Users/lorneez/CLionProjects/dailyprogrammer/ImageConverter/imageconverter.h
@@ -65,4 +68,5 @@ CMakeFiles/cpp_code.dir/main.cpp.o
  /Users/lorneez/CLionProjects/dailyprogrammer/Project2/template/LinkedList.h
  /Users/lorneez/CLionProjects/dailyprogrammer/Project2/template/ListNode.h
  /Users/lorneez/CLionProjects/dailyprogrammer/Project2/vector/MatrixVector.h
+ /Users/lorneez/CLionProjects/dailyprogrammer/Project4/ListFilesAndDirectories.h
  /Users/lorneez/CLionProjects/dailyprogrammer/main.cpp

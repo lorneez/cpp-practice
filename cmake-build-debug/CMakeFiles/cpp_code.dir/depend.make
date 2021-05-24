@@ -50,6 +50,9 @@ CMakeFiles/cpp_code.dir/Project2/hashset/HashSetGame.cpp.o: ../Project2/hashset/
 CMakeFiles/cpp_code.dir/Project2/vector/MatrixVector.cpp.o: ../Project2/vector/MatrixVector.cpp
 CMakeFiles/cpp_code.dir/Project2/vector/MatrixVector.cpp.o: ../Project2/vector/MatrixVector.h
 
+CMakeFiles/cpp_code.dir/Project4/ListFilesAndDirectories.cpp.o: ../Project4/ListFilesAndDirectories.cpp
+CMakeFiles/cpp_code.dir/Project4/ListFilesAndDirectories.cpp.o: ../Project4/ListFilesAndDirectories.h
+
 CMakeFiles/cpp_code.dir/main.cpp.o: ../FileCalculator/filecalculator.h
 CMakeFiles/cpp_code.dir/main.cpp.o: ../ImageConverter/imageconverter.h
 CMakeFiles/cpp_code.dir/main.cpp.o: ../Mandelbrot/mandelbrot.h
@@ -64,5 +67,6 @@ CMakeFiles/cpp_code.dir/main.cpp.o: ../Project2/hashset/HashSetGame.h
 CMakeFiles/cpp_code.dir/main.cpp.o: ../Project2/template/LinkedList.h
 CMakeFiles/cpp_code.dir/main.cpp.o: ../Project2/template/ListNode.h
 CMakeFiles/cpp_code.dir/main.cpp.o: ../Project2/vector/MatrixVector.h
+CMakeFiles/cpp_code.dir/main.cpp.o: ../Project4/ListFilesAndDirectories.h
 CMakeFiles/cpp_code.dir/main.cpp.o: ../main.cpp
 
